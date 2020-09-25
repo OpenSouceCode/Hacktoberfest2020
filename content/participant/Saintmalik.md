@@ -1,7 +1,7 @@
 ---
 name: SaintMalik
 institution: Ekiti State University
-image: Saintmalik.png
+image: Saintmalik.jpg
 quote: Be patient but persistent
 github: saintmalik
 ---
