@@ -1,7 +1,7 @@
 ---
 name: Aldi Wildan
 institution: Brawijaya University 🚩
-image: aldiwildan77.png
+image: Aldiwildan77.png
 quote: Aim, hit, enjoy, repeat.
-github: aldiwildan77
+github: Aldiwildan77
 ---
