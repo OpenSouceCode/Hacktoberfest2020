@@ -2,6 +2,6 @@
 name: Parthav Joshi
 institution: NMIMS-MPSTME
 image: parthav09.png 
-quote: Talk is cheap. Show me the code.
+quote: Love what you do. Do what you love
 github: parthav09
 ---
