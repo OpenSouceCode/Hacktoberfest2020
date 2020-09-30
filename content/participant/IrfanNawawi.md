@@ -1,7 +1,7 @@
 ---
 Name: Irfan Nawawi
 institution: Unindra
-image: IrfanNawawi.jpg
+image: IrfanNawawi.png
 quote: Ikan Hiu Makan Tomat
 github: IrfanNawawi
 ---
