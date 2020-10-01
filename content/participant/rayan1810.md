@@ -1,8 +1,4 @@
-## NAME
- - Rohit Singh
-
-## Institute 
- - Chitkara University, Baddi
-
-## GitHub
- - rayan1810
+---
+name: Rohit Singh
+institution: Chitkara University Baddi
+github:rayan1810
