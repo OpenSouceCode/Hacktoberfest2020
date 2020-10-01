@@ -2,6 +2,6 @@
 name: adipurnamk
 institution: Praxis Academy
 image: adipurnamk.jpg
-quote: kininarimasu, eru
+quote: kininarimasu
 github: adipurnamk
 ---
