@@ -1,4 +1,5 @@
 ---
 name: Agrim Bansal
-institution: O.P. Jindal Modern School Hisar
-github: Agrim-Bansal
+institution: Om Prakash Jindal Modern School
+github: Agrim Bansal
+image : agrim-bansal.jpg
