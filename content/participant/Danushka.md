@@ -1,5 +1,5 @@
 ---
-Name: 1Danushka Nuwan
+Name: Danushka Nuwan
 institution: SLIIT
 image: Danushka.jpeg
 quote: Rise and grind
