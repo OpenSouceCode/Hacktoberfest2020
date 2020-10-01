@@ -1,4 +1,4 @@
-# Hacktoberfest2020---its a very good project and get a free tshirt.
+# Hacktoberfest2020---it's a very good project and get a free tshirt.
 
 Make your first Pull Request and earn a free tee from GitHub!
 
@@ -52,9 +52,9 @@ Copy the next template into your file, delete the boilerplate data and fill the 
 
 ```
 ---
-name: YOURNAME
-institution: INSTITUTION_NAME
-github:USERNAME
+name: SHUBHAM SINHA
+institution:ACEIT
+github:iamsinha
 ```
 
 _Do not use special characters in the template above._
