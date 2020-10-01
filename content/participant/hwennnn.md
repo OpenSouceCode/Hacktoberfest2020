@@ -1,7 +1,7 @@
 ---
 name: Hou Man
 institution: Ngee Ann Polytechnic
-image: hwennnnn.jpg
+image: hwennnn.jpg
 quote: “math + logic = magic”
-github: hwennnnn
+github: hwennnn
 ---
