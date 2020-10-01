@@ -2,7 +2,7 @@
 using namespace std;
 int merge(int arr[],int start, int mid,int mid2, int end)
 {
-	int size1 = mid2 - start; 
+    int size1 = mid2 - start; 
     int size2 = end - mid; 
   
     int arr1[size1], arr2[size2]; 
@@ -54,13 +54,13 @@ int mergesort(int arr[], int start, int end)
 int main()
 {
 	int arr[5] = { 1, 4, 5, 3, 2};
-	cout<<"The array before sorting is: ";
+	cout<<"The array before merge sorting is: ";
 	for(int i=0;i<5;i++)
 	{
 		cout<<arr[i]<<" ";
 	}
 	cout<<"\n";
-	cout<<"The array after sorting is: ";
+	cout<<"The array after merge sorting is: ";
 	mergesort(arr,0,4);
 	for(int i=0;i<5;i++)
 	{
