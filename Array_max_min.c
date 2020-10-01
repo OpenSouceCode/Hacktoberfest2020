@@ -1,29 +1,32 @@
 #include <stdio.h>
+#include<conio.h>
+//Use console input output header file (conio.h) for using predefined functions clrscr()(for clearing the output screen) and getch()(for getting a character for terminating the output screen)
 
 int maximum(int A[], int n){
-    int mx = A[0];
+    int max = A[0];
     for (int i = 1; i < n; i++)
     {
-        if(mx < A[i]){
-            mx = A[i];
+        if(max < A[i]){
+            max = A[i];
         }
     }
-    return mx;
+    return max;
     
 }
 int minimum(int A[], int n){
-    int mn = A[0];
+    int min = A[0];
     for (int i = 1; i < n; i++)
     {
-        if(mn > A[i]){
-            mn = A[i];
+        if(min > A[i]){
+            min = A[i];
         }
     }
-    return mn;
+    return min;
     
 }
 
-int main(){
+void main(){
+    clrscr();  //for clearing the console screen
     int A[] = {1, 3, 4, 1}; 
     int size = (sizeof(A)/sizeof(int));
     int min = minimum(A, size);
@@ -32,5 +35,5 @@ int main(){
     // printf("%d\n",max);
     int sum = min + max;
     printf("%d",sum);
-    return 0;
+    getch(); //for getting a character
 }
