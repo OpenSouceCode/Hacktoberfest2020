@@ -1,4 +1,7 @@
 ---
 name: NyCode
-institution: none
-github:NyCodeGHG
+institution: None
+image: NyCodeGHG.png
+quote: dnyPls
+github: NyCodeGHG
+---
