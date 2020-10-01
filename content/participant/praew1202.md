@@ -1,7 +1,4 @@
 ---
-Name: Jaruwan Panyaoud
+name: Jaruwan Payaoud
 institution: Kamphaeng Phet Rajabhat University
-image: praew1202.jpg 
-quote: learn how to care less
-github: praew1202
----
+github:praew1202
