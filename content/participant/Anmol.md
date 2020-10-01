@@ -12,3 +12,4 @@ Namaste,Hola,Hi! I'm Anmol Sinha!👋
 
 
 ⚡ Fun fact: Ctrl + C and Ctrl + V have saved more lives than Batman and Robin.
+---

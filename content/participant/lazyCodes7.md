@@ -5,3 +5,4 @@ image: <lazyCodes7>.png # Name and extension of your profile picture(ex. <YOUR-U
 quote: Training is nothing, the will is everything # no longer than 100 characters, avoid using quotes(") to guarantee the format remains the same.
 github: lazyCodes7
 ---
+---

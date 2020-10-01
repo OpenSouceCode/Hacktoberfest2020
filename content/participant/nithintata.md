@@ -68,3 +68,4 @@ Beside's developing stuff, I enjoy listening music ğŸ§, watching web series ğŸ“
    <img align="left" src="https://github-readme-stats.vercel.app/api?username=nithintata&theme=radical&show_icons=true&count_private=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515&line_height=33&hide_rank=false" alt="Akash Kumar's github stats"/>
   
 </p>
+---
