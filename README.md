@@ -11,11 +11,11 @@ Make your first Pull Request and earn a free tee from GitHub!
    <img alt="GitHub stars" src="https://img.shields.io/github/stars/OpenSouceCode/Hacktoberfest2020"></a>
    <img alt="Github license" src="https://img.shields.io/github/license/OpenSouceCode/Hacktoberfest2020"></a>
 </p>
-# Welcome to GitHub!
+# Welcome to GitHub 🎉
 
-## This project is perfect for your first pull request
+## This project is perfect for your first pull request🎁🎀🏅
 
-## Instructions-
+## Instructions :-
 
 - Fork this Repository using the button at the top
 - Clone your forked repository to your pc
@@ -26,11 +26,11 @@ Make your first Pull Request and earn a free tee from GitHub!
 - Create a pull request
 - Star this repository
 
-# How to make your first Pull Request
+# How to make your first Pull Request :-
 
 Replace `<YOUR-USERNAME>` with your GitHub username in this guide.
 
-## 1. Add your profile picture to the folder
+## 1. Add your profile picture to the folder :-
 
 Add a picture picture of your choice in `static/images/`. Accepted files are **png** and **jpg**, should be squared and minimum size 544x544 pixels. Ex.
 
