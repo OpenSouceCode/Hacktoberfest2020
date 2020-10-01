@@ -1,7 +1,7 @@
 ---
 name: Harshit
 institution: AGIT
-image: harshit.jpg
+image: Harshit010.jpg
 quote: Truth always triumphs
 github: Harshit010
 ---
