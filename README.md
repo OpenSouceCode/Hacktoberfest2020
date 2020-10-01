@@ -1,6 +1,6 @@
 # Hacktoberfest2020---its a very good project and get a free tshirt.
 
-Make your first Pull Request and earn a free tee from GitHub!
+Make your first Pull Request and earn a free tshirt from GitHub!
 
 ![Hacktoberfest 2020](osc_hacktoberfest2020.png)
 
@@ -48,7 +48,7 @@ Create a markdown file in your folder following the convention `content/particip
 content/participant/<YOUR-USERNAME>.md/
 ```
 
-Copy the next template into your file, delete the boilerplate data and fill the information with yours.
+Copy the next template into your file, delete the boilerplate data and fill the information with your data.
 
 ```
 ---
