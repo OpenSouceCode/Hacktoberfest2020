@@ -1,6 +1,6 @@
 # Hacktoberfest2020---its a very good project and get a free tshirt.
 
-Make your first Pull Request and earn a free tee from GitHub!
+Make your first Pull Request and earn a free tshirt from GitHub!
 
 ![Hacktoberfest 2020](osc_hacktoberfest2020.png)
 
@@ -11,7 +11,7 @@ Make your first Pull Request and earn a free tee from GitHub!
    <img alt="GitHub stars" src="https://img.shields.io/github/stars/OpenSouceCode/Hacktoberfest2020"></a>
    <img alt="Github license" src="https://img.shields.io/github/license/OpenSouceCode/Hacktoberfest2020"></a>
 </p>
-# Welcome to GitHub!
+# Welcome to GitHub!!
 
 ## This project is perfect for your first pull request
 
