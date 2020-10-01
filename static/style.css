@@ -5,6 +5,8 @@ body {
   font-weight: 500;
   background-color: #5356A5;
   -webkit-font-smoothing: antialiased;
+  color: #212529;
+  text-align: left;
 }
 
 .title {
@@ -21,6 +23,7 @@ p {
 
 h1 + p, p + p {
   margin-top: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .container {
@@ -142,4 +145,8 @@ h1 + p, p + p {
   font-size: 30px;
   font-weight: 600;
   text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+}
+svg {
+  overflow: hidden;
+  vertical-align: middle;
 }
