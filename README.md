@@ -17,9 +17,9 @@ Make your first Pull Request and earn a free tee from GitHub!
 
 ## Instructions-
 
-- Fork this Repository using the button at the top
-- Clone your forked repository to your pc
-- Create a new branch for your modifications (ie. `git branch new-user` and check it out `git checkout new-user` and `git checkout -b new-user`)
+- Fork this Repository using the button on top
+- Clone your forked repository to your PC
+- Create a new branch for your modifications (i.e. `git branch new-user` and check it out `git checkout new-user` and `git checkout -b new-user`)
 - Add your profile image in `static/images/`
 - Add your profile data in `content/participant/`
 - Add your files (`git add -A`), commit (`git commit -m "added myself"`) and push (`git push origin new-user`)
@@ -32,13 +32,13 @@ Replace `<YOUR-USERNAME>` with your GitHub username in this guide.
 
 ## 1. Add your profile picture to the folder
 
-Add a picture picture of your choice in `static/images/`. Accepted files are **png** and **jpg**, should be squared and minimum size 544x544 pixels. Ex.
+Add a picture of your choice in `static/images/`. Accepted files are **png** and **jpg**, should be squared and minimum size 544x544 pixels. Ex.
 
 ```
 static/images/<YOUR-USERNAME>.png
 ```
 
-_Be aware, this picture will be displayed on the yearbook!_
+_Note that, this picture will be displayed on the yearbook!_
 
 ## 2. Add your profile information
 
