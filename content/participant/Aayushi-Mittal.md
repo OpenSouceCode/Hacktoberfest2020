@@ -2,6 +2,6 @@
 Name: Aayushi Mittal
 institution: Maharaja Agrasen Institute Of Technology
 image: Aayushi-Mittal.jpg 
-quote: No one is perfect - that's why pencils have erasers.
+quote: Learn the rules like a pro, so you can break them like an artist.
 github: Aayushi-Mittal
 ---
