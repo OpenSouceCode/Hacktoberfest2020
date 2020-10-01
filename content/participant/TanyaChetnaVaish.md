@@ -1,4 +1,7 @@
 ---
 name: Tanya Chetna Vaish
-institution: Graphic Era Deemed to be University, Dehradun, India
-github:TanyaChetnaVaish
+institution: Graphic Era University
+image: TanyaChetnaVaish.jpg
+quote: Stand out
+github: TanyaChetnaVaish
+---
