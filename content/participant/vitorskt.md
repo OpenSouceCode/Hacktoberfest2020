@@ -1,7 +1,7 @@
 ---
 name: João Victor do Nascimento
-institution: Faculdade Maurício de Nassau
+institution: Faculdade Maurício da Nassau
 image: vitorskt.jpg
-quote: Live intensely
+quote: Live Intensely
 github: vitorskt
 ---
