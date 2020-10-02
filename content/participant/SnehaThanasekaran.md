@@ -1,5 +1,5 @@
 ---
-name: Ankit Lenka
+name: Sneha Thanasekaran
 institution: San Diego State University
 image: SnehaThanasekaran.JPG
 quote: "If you don't like the path you are walking, you have to pave another one"
