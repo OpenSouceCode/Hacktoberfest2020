@@ -1,6 +1,7 @@
-# Hacktoberfest2020---its a very good project and get a free tshirt.
+<h1 id="title" align="center">:computer: Hacktoberfest2020 :computer:</h1>
+<h1 id="subTitle" align="center">A Very Good Project and Get a Free T-Shirt :tshirt:</h1>
 
-Make your first Pull Request and earn a free tee from GitHub!
+<h4 align="center">Make your first Pull Request and earn a free tee from GitHub!</h4>
 
 ![Hacktoberfest 2020](osc_hacktoberfest2020.png)
 
@@ -11,7 +12,6 @@ Make your first Pull Request and earn a free tee from GitHub!
    <img alt="GitHub stars" src="https://img.shields.io/github/stars/OpenSouceCode/Hacktoberfest2020"></a>
    <img alt="Github license" src="https://img.shields.io/github/license/OpenSouceCode/Hacktoberfest2020"></a>
 </p>
-# Welcome to GitHub!
 
 ## This project is perfect for your first pull request
 
@@ -26,7 +26,7 @@ Make your first Pull Request and earn a free tee from GitHub!
 - Create a pull request
 - Star this repository
 
-# How to make your first Pull Request
+<h1 align="center"> How to make your first Pull Request</h1>
 
 Replace `<YOUR-USERNAME>` with your GitHub username in this guide.
 
@@ -34,7 +34,7 @@ Replace `<YOUR-USERNAME>` with your GitHub username in this guide.
 
 Add a picture picture of your choice in `static/images/`. Accepted files are **png** and **jpg**, should be squared and minimum size 544x544 pixels. Ex.
 
-```
+```ruby
 static/images/<YOUR-USERNAME>.png
 ```
 
@@ -44,13 +44,13 @@ _Be aware, this picture will be displayed on the yearbook!_
 
 Create a markdown file in your folder following the convention `content/participant/<YOUR-USERNAME>.md`. Ex.
 
-```
+```ruby
 content/participant/<YOUR-USERNAME>.md/
 ```
 
 Copy the next template into your file, delete the boilerplate data and fill the information with yours.
 
-```
+```ruby
 ---
 name: YOURNAME
 institution: INSTITUTION_NAME
