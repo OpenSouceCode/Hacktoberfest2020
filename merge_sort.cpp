@@ -53,16 +53,16 @@ int mergesort(int arr[], int start, int end)
 }
 int main()
 {
-	int arr[5] = { 1, 4, 5, 3, 2};
+	int arr[6] = { 1, 4, 5, 3, 2, 6};
 	cout<<"The array before sorting is: ";
-	for(int i=0;i<5;i++)
+	for(int i=0;i<6;i++)
 	{
 		cout<<arr[i]<<" ";
 	}
 	cout<<"\n";
 	cout<<"The array after sorting is: ";
-	mergesort(arr,0,4);
-	for(int i=0;i<5;i++)
+	mergesort(arr,0,5);
+	for(int i=0;i<6;i++)
 	{
 		cout<<arr[i]<<" ";
 	}
