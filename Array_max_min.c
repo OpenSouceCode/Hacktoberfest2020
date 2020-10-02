@@ -1,32 +1,31 @@
 #include <stdio.h>
 
-int maximum(int A[], int n){
-    int mx = A[0];
-    for (int i = 1; i < n; i++)
-    {
-        if(mx < A[i]){
-            mx = A[i];
-        }
+int main()
+{
+   int n,;
+    int count=0;
+    cout<<"enter size of array";
+    cin>>n;
+    int arr[n];
+    cout<<"enter array elements";
+    for(int i=0;i<n;i++ ){
+        cin>>arr[i];
     }
-    return mx;
-    
-}
-int minimum(int A[], int n){
-    int mn = A[0];
-    for (int i = 1; i < n; i++)
+    for(int i=0;i<n;i++)
     {
-        if(mn > A[i]){
-            mn = A[i];
-        }
-    }
-    return mn;
+       for(int j=i+1;j<n;j++)
+       {
+          if(arr[i]>arr[j])
+              {
+                 int temp=arr[j];
+                      arr[j]=arr[i];
+                      arr[i]=temp;
+              }      
+       }
     
-}
-
-int main(){
-    int A[] = {1, 3, 4, 1}; 
-    int size = (sizeof(A)/sizeof(int));
-    //printing the sum
-    printf("%d",minimum(A, size) + maximum(A, size) );
-    return 0;
+    }
+    cout<<"largest element is"<<arr[n-1];
+     cout<<"smallest element is"<<arr[0];
+   
+  return 0;
 }
