@@ -3,15 +3,15 @@ body {
   font-family: "Raleway";
   font-size: 14px;
   font-weight: 500;
-  background-color: #5356A5;
+  background-color: #03CEA4;
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
   font-family: "Raleway";
-  font-size: 24px;
+  font-size: 52px;
   font-weight: 700;
-  color: #ffffff;
+  color: #CA1551;
   text-align: center;
 }
 
@@ -75,7 +75,7 @@ h1 + p, p + p {
           flex: 0 0 240px;
   width: 240px;
   height: 320px;
-  background-color: #333;
+  background-color: #CA1551;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
