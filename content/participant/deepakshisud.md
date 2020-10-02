@@ -1,7 +1,5 @@
 ---
-name: DEEPAKSHI SOOD
+Name: DEEPAKSHI SOOD
 institution: VIT CHENNAI
-image: deepakshisud.jpg
-quote: Pretty girls code hard
 github: deepakshisud
 ---
