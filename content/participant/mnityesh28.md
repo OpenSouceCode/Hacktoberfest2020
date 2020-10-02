@@ -1,6 +1,6 @@
 ---
 Name: Nityesh Maheshwari
-Institute:NITK
-Place:Indore
-github:mnityesh28
+Institute: NITK
+Place: Indore
+github: mnityesh28
 ---
