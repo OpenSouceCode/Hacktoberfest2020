@@ -1,4 +1,4 @@
-# Hacktoberfest2020---its a very good project and get a free tshirt.
+# Hacktoberfest2020---its a very good initiative to become open source enthusiastic and get a free tee.
 
 Make your first Pull Request and earn a free tee from GitHub!
 
