@@ -24,9 +24,14 @@ int minimum(int A[], int n){
 }
 
 int main(){
-    int A[] = {1, 3, 4, 1}; 
-    int size = (sizeof(A)/sizeof(int));
+    int size;
+    printf(""Enter the no of elements you will enter\n");
+    scanf("%d",&size);
+    int A[size];
+    printf("Enter the elements\n");
+    for(int i=0;i<size;i++)
+           scanf("%d",&A[i]);
     //printing the sum
-    printf("%d",minimum(A, size) + maximum(A, size) );
+    printf("Sum is: %d",minimum(A, size) + maximum(A, size) );
     return 0;
 }
