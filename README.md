@@ -1,4 +1,4 @@
-# Hacktoberfest2020
+# Hacktoberfest2020---its a very good project and get a free tshirt.
 
 Make your first Pull Request and earn a free tee from GitHub!
 
@@ -18,9 +18,9 @@ Make your first Pull Request and earn a free tee from GitHub!
 ## Instructions-
 
 - Fork this Repository using the button at the top
-- Clone your forked repository to your pc
+- Clone your forked repository to your pc ( git clone "url from clone option.)
 - Create a new branch for your modifications (ie. `git branch new-user` and check it out `git checkout new-user` and `git checkout -b new-user`)
-- Add your profile image in `static/images/`
+- Add your profile image in `static/images/` ( use drag and drop option or upload by commands.)
 - Add your profile data in `content/participant/`
 - Add your files (`git add -A`), commit (`git commit -m "added myself"`) and push (`git push origin new-user`)
 - Create a pull request
@@ -52,12 +52,9 @@ Copy the next template into your file, delete the boilerplate data and fill the 
 
 ```
 ---
-name: FULLNAME-OR-NICKNAME # No longer than 28 characters
-institution: INSTITUTION-NAME 🚩 # no longer than 58 characters
-image: <YOUR-USERNAME>.png # Name and extension of your profile picture(ex. <YOUR-USERNAME>.png) The picture must be squared and 544px on width and height.
-quote: YOUR-SENIOR-QUOTE # no longer than 100 characters, avoid using quotes(") to guarantee the format remains the same.
-github: YOUR-GITHUB-USERNAME
----
+name: YOURNAME
+institution: INSTITUTION_NAME
+github:USERNAME
 ```
 
 _Do not use special characters in the template above._

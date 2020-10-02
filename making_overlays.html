@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<Head>
+<Title>PopLink Ad Sample</Title>
+<style>
+
+html, body {
+  height: 100%;
+  /* background-color: lemonchiffon; */
+}
+#content{
+  position:relative;
+}
+#overlay {
+  position: absolute;
+  display:inline-block;
+  width: 400px;
+  height: 110px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index:1;
+  cursor: pointer;
+}
+.overlay{background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+/* .overlay-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:500px} */
+.container{padding:0.2em 6px;overflow:hidden;display:inline-flexbox;}
+.container:after,.w3-container:before{content:"";clear:both}
+.teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.button:hover{color:#000!important;background-color:#ccc!important}
+.display-topright{position:absolute;right:0;top:0}
+.button{width:25px}
+.button:disabled{cursor:not-allowed;opacity:0.3}
+.button{border:none;display:inline-block;vertical-align:middle;overflow:hidden;text-decoration:solid;color:inherit;
+background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+</style>
+</Head>
+<body>
+  <!-- <div id="content"> -->
+   <div id="overlay" class="w3-overlay">
+    <header class="container teal">
+    <span onclick="document.getElementById('overlay').style.display='none'" 
+        class="button display-topright">&times;</span>
+        <h4>Header</h4>
+      </header>
+      <a href="https://google.com">
+      <div class="container teal" >
+        <img src="https://media.giphy.com/media/YlmI36YAWe7KScC7hK/giphy.gif" height="50px" width="360px"> 
+      </div>
+      </a>
+      <!-- <footer class="container teal">
+        <h6>*Terms and Conditions Applied</h6>
+      </footer> -->
+    </div>
+<!-- </div>
+<script>    
+</script> -->
+
+</body>
+</html>
