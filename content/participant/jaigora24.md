@@ -1,4 +1,5 @@
 ---
-name:Jai Gora
-institution:Shri Mata Vaishno Devi University
-github:jaigora24
+Name: Jai Gora
+institution: Shri Mata Vaishno Devi University
+github: jaigora24
+---
