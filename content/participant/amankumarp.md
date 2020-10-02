@@ -1,6 +1,6 @@
 ---
 name : Aman Kumar
 institution: IICS College Allahabad
-image: amankumar.jpg
+image: amankumarp.jpg
 github: amankumarp
 ---
