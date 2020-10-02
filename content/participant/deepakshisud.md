@@ -1,5 +1,5 @@
 ---
-Name: DEEPAKSHI SOOD
-institution: VIT CHENNAI
+name: Deepakshi Sood
+institution: VIT Chennai
 github: deepakshisud
 ---
