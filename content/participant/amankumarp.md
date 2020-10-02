@@ -1,3 +1,6 @@
-name: Aman Kumar
-institution: IICS College
-github:amankumarp
+---
+name : Aman Kumar
+institution: IICS College Allahabad
+image: amankumar.jpg
+github: amankumarp
+---
