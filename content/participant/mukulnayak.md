@@ -1,5 +1,5 @@
 ---
 name: mukulnayak
 institution: bits
-github:mukulnayak
+github: mukulnayak
 ---
