@@ -58,6 +58,7 @@ github:yogendraN27
 ```
 
 _Do not use special characters in the template above._
+## 3. Commit and Push your code
 
 ## 4. Wait for Pull Request to merge
 
