@@ -2,7 +2,7 @@
 Name: Manish Gautam
 institution: GLA University,Mathura
 image: ManishGautam.jpg 
-quote: To be best , do your Best
+quote: Do Your best to be best...!
 github: manishgautam30
 ---
 
