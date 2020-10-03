@@ -1,4 +1,7 @@
 ---
-name: ABHILASHA BANSAL
-institution: DELHI TECHNOLOGICAL UNIVERSITY
-github:AbhilashaBansal
+Name: ABHILASHA BANSAL
+institution: DTU
+image: AbhilashaBansal.jpg 
+quote: self doubt kills more dreams, than failure does
+github: AbhilashaBansal
+---
