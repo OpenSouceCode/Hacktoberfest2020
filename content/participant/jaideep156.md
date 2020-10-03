@@ -1,4 +1,5 @@
 ---
 name: JAIDEEP PRASHAR
 institution: BENNETT UNIVERSITY
-github:jaideep156
+image: jaideep156.jpg
+github: jaideep156
