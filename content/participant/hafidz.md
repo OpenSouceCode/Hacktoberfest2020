@@ -1,7 +1,7 @@
 ---
 name: Hafidz Amrulloh
 institution: Qoala Insurance Tech
-image: Gautam.png
+image: codercat.jpg
 quote: Javascript is my life
 github: hafidzamr
 ---
