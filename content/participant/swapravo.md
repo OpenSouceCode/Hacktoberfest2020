@@ -5,4 +5,3 @@ Image: swapravo.jpeg
 Quote: “Up for a rat race?”
 GitHub: swapravo
 ---
-
