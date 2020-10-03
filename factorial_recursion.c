@@ -1,20 +1,18 @@
-#include <stdio.h> 
-
-int factorial(int num) {
-
-  if(num <= 1) {
-    return 1;
-  }
-  
-  return num * factorial(num-1);
-}
-
+#include<stdio.h> 
 int main() { 
-  
-  int num, result;
-  printf("Insert the number: ");
-  scanf("%d", &num);
-  result = factorial(num);
-  printf("Result = %d", result);
+  int n,fact;
+  printf("Enter the number:");
+  scanf("%d", &n);
+  result=factorial(n);
+  printf("Factorial of the number is %d\n",fact);
 	return 0; 
+}
+int factorial(int n)
+{
+	if(n==0) {
+		return 1;
+	}
+	else{
+		return(n*factorial(n-1));
+	}
 }
