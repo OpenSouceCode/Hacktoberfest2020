@@ -1,7 +1,6 @@
 ---
-### Name: Kaustubh Deokar 
-### Institution:Vellore Institute of Technology
-### Image: kaustubhdeokar.jpeg
-### quote: .
+### name: Kaustubh Deokar 
+### institution:Vellore Institute of Technology
 ### github: kaustubhdeokar
 ---
+
