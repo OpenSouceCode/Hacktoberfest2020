@@ -1,6 +1,6 @@
 ---
 name: Jithin Jose
 institution: VJEC
+image: defaultRectr0.jpg
 github: defaultRectr0
-image: defaultRectr0.jpeg
 ---
