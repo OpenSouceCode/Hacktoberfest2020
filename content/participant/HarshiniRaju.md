@@ -1,4 +1,4 @@
----
-name: HARSHINI RAJU
-institution: VELLORE INSTITUTE OF TECHNOLOGY
-github:HarshiniR4
+
+| Name          | Institution                     | Github        |
+| :---          |    :----:                       | :-----------: |
+| Harshini Raju | Vellore Institute of Technology | HarshiniR4    |
