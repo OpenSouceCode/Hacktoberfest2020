@@ -27,7 +27,9 @@
           <div class="speakers animate">
             <div class="top">
               <div class="image">
-                <img src="/images/{{ .Params.image }}" />
+                <img data-src="/images/{{ .Params.image }}" 
+                  src="https://via.placeholder.com/150?text=Loading" 
+                  class="lazyload"/>
               </div>
               <div class="name">
                 {{ .Params.name }}
@@ -47,5 +49,6 @@
       </div>
     </div>
     <!-- partial -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
   </body>
 </html>

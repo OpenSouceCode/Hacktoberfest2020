@@ -18,11 +18,14 @@
     <!-- partial:index.partial.html -->
     <div class="container">
       <h1>{{ .Params.name }}</h1>
-      <img src="/images/{{ .Params.image }}" />
+      <img data-src="/images/{{ .Params.image }}" 
+        src="https://via.placeholder.com/150?text=Loading" 
+        class="lazyload"/>
       <h2>{{ .Params.institution }}</h2>
       <a href="https://github.com/{{ .Params.github }}" target="_blank"
         ><i class="fab fa-github"></i
       ></a>
     </div>
   </body>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
 </html>
