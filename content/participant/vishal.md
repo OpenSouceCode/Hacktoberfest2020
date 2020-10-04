@@ -1,4 +1,4 @@
 ---
 name: VISHAL
-institution: V.B.S.P.U.JAUNPUR
+institution: Veer Bahadur Singh Purvanchal University JAUNPUR
 github:vishal3308
