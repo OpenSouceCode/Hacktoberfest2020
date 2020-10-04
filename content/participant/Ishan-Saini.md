@@ -1,5 +1,5 @@
 ---
-Name: Ishan
+name: Ishan
 institution: JIIT, Noida
 image: Ishan-Saini.jpg 
 quote: Learning

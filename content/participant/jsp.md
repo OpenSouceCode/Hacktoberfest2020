@@ -1,5 +1,5 @@
 ---
-Name: JaySuk
+name: JaySuk
 institution: STMN
 image: jso.jpg 
 quote: Fullfilled the love.

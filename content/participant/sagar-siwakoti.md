@@ -1,5 +1,5 @@
 ---
-Name: Sagar
+name: Sagar
 institution: Tribhuvan University
 image: sagar.jpg
 quote: Seek Discomfort

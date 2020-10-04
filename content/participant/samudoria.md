@@ -1,5 +1,5 @@
 ---
-Name: Samuele
+name: Samuele
 institution: Unical
 image: samudoria.jpeg 
 quote: Just do it.
