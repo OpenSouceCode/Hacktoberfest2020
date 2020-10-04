@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'sans-serif';
+  }
+  body{
+    min-height:100vh;
+    background: #ff1060ec;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:80vw;
+    height:auto;
+  }
+  .card{
+     width: 200px;
+      height: 275px;
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    transition:0.3s ease;
+  }
+  .try:hover {
+    transform: translateY(15px);
+  }
+  /* for movement of other two cards this is needed. */
+  /* .card:hover{
+    transform:translateY(15px);
+  } */
+  .card:hover:before{
+    opacity:1;
+  }
+  .card:hover .text{
+    transform:translate(0);
+    opacity:1;
+  }
+  .try{
+    width: 200px;
+    height: 275px;
+    position:relative;
+  }
+  .try:before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    bottom:-5px;
+    left:-5px;
+    right:-5px;
+    background: linear-gradient(315deg,#09cfe9,#89ff00);
+    transform: skew(2deg,2deg);
+    z-index: -1;
+  }
+  
+  .card:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top,#000,transparent);
+    z-index:2;
+    transition:0.5s;
+    opacity:0;
+  }
+  .card img{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+  }
+  .card .text{
+    position: relative;
+    padding:30px 10px;
+     color:#fff;
+     opacity: 0;
+    width:100%;
+     transform: translateY(60px); 
+     transition: 0.5s ;
+     z-index: 3;
+  }
+  .card .text h4{
+      font-size: 20px;
+  }
+  .card .text h5{
+    font-size: 15px;
+}
+  ul{
+    display:flex;
+    padding-top:10px;
+    width:100%;
+    justify-content:space-evenly;
+  }
+  ul li{
+    list-style:none;
+  }
+  ul li a{
+    position:relative;
+    text-decoration:none;
+    color:#fff;
+    left:-10px;
+    padding-right:4px;
+    font-size:20px;
+  }
