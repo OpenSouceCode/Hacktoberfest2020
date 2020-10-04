@@ -1,4 +1,7 @@
 ---
 name: Conor Joyce
 institution: DCU
-github:cawnj
+image: cawnj.jpg
+quote: Yup yup 7up
+github: cawnj
+---
