@@ -1,4 +1,4 @@
 name: Saurabh Atram
-institution : Skncoe Pune
+institution : Smt Kashibai Navale College of Engineering, Pune
 github: saurabhatram
 img:saurabhatram
