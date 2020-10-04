@@ -1,0 +1,77 @@
+Determine the lowest order of a digital IIR band pass Butterworth filter. The specifications are as follows: sampling rate of 7 kHz, pass band edge frequencies at 1.4 kHz and 2.1 kHz, stop band edge frequencies at 1.05 kHz and 2.45 kHz, pass band ripple of 0.4 dB, and a minimum stop band attenuation of 50 dB. Plot magnitude, phase and impulse response of the filter.
+
+In [1]:
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy import signal
+import math
+In [2]:
+def convertX(f_sample,f):
+  w=[]
+  for i in range(len(f)):
+    b=2*((f[i]/2)/(f_sample/2))
+    w.append(b)
+
+  omega_mine=[]
+
+  for i in range(len(w)):
+    c=(2/Td)*np.tan(w[i]/2)
+    omega_mine.append(c)
+
+  return omega_mine
+In [3]:
+f_sample=7000
+f_pass=[1400,2100]
+f_stop=[1050,2450]
+fs=0.5
+g_pass=0.4
+g_stop=50
+Td=1
+omega_p=convertX(f_sample,f_pass)
+omega_s=convertX(f_sample,f_stop)
+
+N, Wn = signal.buttord(omega_p, omega_s, g_pass, g_stop, analog=True)
+In [4]:
+print("Order of the Filter=", N)
+print("Cut-off frequency= {:} rad/s ".format(Wn))
+
+b, a = signal.butter(N, Wn, 'bandpass', True)
+z, p=signal.bilinear(b,a,fs)
+w, h = signal.freqs(b, a)
+Order of the Filter= 12
+Cut-off frequency= [0.39689099 0.63196761] rad/s 
+In [5]:
+plt.semilogx(w, 20*np.log10(abs(h)))
+plt.xscale('log')
+plt.title('Butterworth filter frequency response')
+plt.xlabel('Frequency [Hz]')
+plt.ylabel('Amplitude [dB]')
+plt.margins(0, 0.1)
+plt.grid(which='both', axis='both')
+plt.axvline(100, color='green')
+plt.show()
+
+In [6]:
+imp = signal.unit_impulse(40)
+c, d = signal.butter(N, 0.5)
+response = signal.lfilter(c, d, imp)
+
+
+plt.stem(np.arange(0, 40),imp,markerfmt='D',use_line_collection=True)
+plt.stem(np.arange(0,40), response,use_line_collection=True)
+plt.margins(0, 0.1)
+plt.xlabel('Time [samples]')
+plt.ylabel('Amplitude')
+plt.grid(True)
+plt.show()
+
+In [7]:
+fig, ax1 = plt.subplots()
+ax1.set_title('Digital filter frequency response')
+ax1.set_ylabel('Angle(radians)', color='g')
+ax1.set_xlabel('Frequency [Hz]')
+angles = np.unwrap(np.angle(h))
+ax1.plot(w/2*np.pi, angles, 'g')
+ax1.grid()
+ax1.axis('tight')
+plt.show()
