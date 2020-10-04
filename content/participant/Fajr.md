@@ -1,5 +1,5 @@
 ---
-Name: Fajar Nur Trengginas
+name: Fajar Nur Trengginas
 institution: University K.H Wahab Hasbullah
 image: Fajr.jpeg 
 quote: Nothing is Impossible If you want to do it

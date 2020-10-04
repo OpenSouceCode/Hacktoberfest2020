@@ -1,5 +1,5 @@
 ---
-Name: Aman Kumar Soni
+name: Aman Kumar Soni
 institution: Lpovely Professional University
 image: aman_computer.jpg 
 quote: Bits & Bytes.

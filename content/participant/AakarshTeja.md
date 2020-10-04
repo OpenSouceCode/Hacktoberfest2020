@@ -1,5 +1,5 @@
 ---
-Name: Aakarsh Teja
+name: Aakarsh Teja
 institution: Vellore Institute of Technology
 image: AakarshTeja.jpg 
 quote: Dream comes true with hardwork

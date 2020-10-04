@@ -1,5 +1,5 @@
 ---
-Name: Aditya Singh
+name: Aditya Singh
 institution: Delhi Technological University
 image: adityanjr.jpg
 quote: Eat Sleep Code Repeat!

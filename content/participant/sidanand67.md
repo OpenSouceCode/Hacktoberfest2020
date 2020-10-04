@@ -1,4 +1,4 @@
-Name: Sidharth Anand
+name: Sidharth Anand
 Institution: SIRT
 Image: sidanand67.jpg
 Github: sidanand67

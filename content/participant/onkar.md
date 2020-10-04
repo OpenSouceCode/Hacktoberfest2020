@@ -1,5 +1,5 @@
 ---
-Name: Onkar Setia
+name: Onkar Setia
 institution: Central University of Haryana
 image: onkar.jpg
 quote: Life is all about Becoming the Change.

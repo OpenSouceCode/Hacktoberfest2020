@@ -1,5 +1,5 @@
 ---
-Name: Ganapathi Subramanian
+name: Ganapathi Subramanian
 institution: ValueLabs
 image: GanapathiSubramanian.jpg
 quote: Trust your instincts
