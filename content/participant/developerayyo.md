@@ -1,4 +1,7 @@
 ---
-name: PETER BABALOLA
-institution: ADELEKE UNIVERSITY, NIGERIA.
-github:developerayyo
+name: Peter Babalola
+institution: Adeleke University
+image: developerayyo.png
+quote: Constant and never-ending improvement.
+github: Developerayyo
+---
