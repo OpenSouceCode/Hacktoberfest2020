@@ -1,4 +1,0 @@
----
-name: Dwayne Nigel Vaz
-institution: K. J. Somaiya College of Engineering
-github:Dwayne232001
