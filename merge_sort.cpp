@@ -1,70 +1,88 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int merge(int arr[],int start, int mid,int mid2, int end)
+
+void mergeSort(int[],int,int); 
+void merge(int[],int,int,int);
+
+//Display function to print values. 
+void display(int arr[], int size)
 {
-	int size1 = mid2 - start; 
-    int size2 = end - mid; 
-  
-    int arr1[size1], arr2[size2]; 
-  
-    for (int i = 0; i < size1; i++) 
-        arr1[i] = arr[start + i]; 
-    for (int j = 0; j < size2; j++) 
-        arr2[j] = arr[mid2 + j]; 
-  	int i = 0; 
-    int j = 0; 
-    int k = start;
-    while (i < size1 && j < size2) { 
-        if (arr1[i] <= arr2[j]) { 
-            arr[k] = arr1[i]; 
-            i++; 
-        } 
-        else { 
-            arr[k] = arr2[j]; 
-            j++; 
-        } 
-        k++; 
-    } 
-  
-    while (i < size1) { 
-        arr[k] = arr1[i]; 
-        i++; 
-        k++; 
-	} 
-  
-    while (j < size2) { 
-        arr[k] = arr2[j]; 
-        j++; 
-        k++; 
-    } 
+    int i;
+    for(i = 0; i < size; i++)
+    {
+        cout<<arr[i]<<"\t";
+    }
+    cout<<"\n";
 }
-int mergesort(int arr[], int start, int end)
+
+int main() 
 {
-	if(start == end)
-		return arr[start];
-	
-	else
-	{
-		int mid = (start + end )/2;
-		mergesort(arr,start,mid);
-		mergesort(arr,mid+1,end);
-		merge(arr,start,mid, mid+1 , end);
-	}
+    int a[10]= {8, 4, 5, 1, 3, 9, 0, 2, 7, 6}; 
+    int i; 
+    
+    int size = sizeof(a)/sizeof(a[0]);
+    cout<<"Before sorting: \n"; 
+    display(a, size);//Using display function to print unsorted array.
+    cout<<"After sorting: \n";
+    mergeSort(a,0,size-1); 
+    display(a, size);//Using display function to print sorted array.
 }
-int main()
+//Dividing the list into two sublist, sorting them and merging them.
+void mergeSort(int a[], int strt, int end)
 {
-	int arr[5] = { 1, 4, 5, 3, 2};
-	cout<<"The array before sorting is: ";
-	for(int i=0;i<5;i++)
-	{
-		cout<<arr[i]<<" ";
-	}
-	cout<<"\n";
-	cout<<"The array after sorting is: ";
-	mergesort(arr,0,4);
-	for(int i=0;i<5;i++)
-	{
-		cout<<arr[i]<<" ";
-	}
-	return 0;
+    int mid;
+    if(strt<end)
+    {
+        mid = (strt+end)/2;
+        
+        mergeSort(a,strt,mid);//Divide
+        mergeSort(a,mid+1,end);//Conqure
+        merge(a,strt,mid,end);//Combine
+    }
+}
+//Combining two sublist.
+void merge(int a[], int strt, int mid, int end)
+{
+    int i=strt,j=mid+1,p,index = strt;
+    int temp[10];
+    
+    while(i<=mid && j<=end)
+    {
+        if(a[i]<a[j])
+        {
+            temp[index] = a[i];
+            i = i+1;
+        }
+        else
+        {
+            temp[index] = a[j];
+            j = j+1;
+        }
+        
+        index++;
+    }
+    if(i>mid)
+    {
+        while(j<=end)
+        {
+            temp[index] = a[j];
+            index++;
+            j++;
+        }
+    }
+    else
+    {
+        while(i<=mid)
+        {
+            temp[index] = a[i];
+            index++;
+            i++;
+        }
+    }
+    p = strt;
+    while(p<index)
+    {
+        a[p]=temp[p];
+        p++;
+    }
 }
