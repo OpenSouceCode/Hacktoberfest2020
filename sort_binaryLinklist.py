@@ -6,7 +6,7 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
-    def printlist(self):
+    def printLinkedlist(self):
         arr = []
         temp = self.head
         while(temp):
@@ -28,5 +28,5 @@ if __name__ == "__main__":
     third.next = four
     
 
-    print(llist.printlist())
+    print(llist.printLinkedlist())
 
