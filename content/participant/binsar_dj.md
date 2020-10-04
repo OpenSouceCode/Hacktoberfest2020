@@ -1,7 +1,7 @@
 ---
 Name: Binsar Dwi Jasuma
 institution: Indosec
-image: binsar_dj.png
+image: binsarjr.png
 quote: Dream comes true with hardwork
-github: binsar_dj
+github: binsarjr
 ---
