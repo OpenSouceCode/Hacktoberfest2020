@@ -1,4 +1,5 @@
---
-name: Khushi Prerak 
-institution: Netaji Subhas University Of Technology 
+---
+name: Khushi Prerak
+institution: Netaji Subhas University of Technology
 github: KhushiPrerak
+---
