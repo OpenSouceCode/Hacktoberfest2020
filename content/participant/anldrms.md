@@ -1,7 +1,7 @@
 ---
 name: Anil rmus
-institutionEbayTR
-imagea anldrms.jpg
+institution: EbayTR
+image: anldrms.jpg
 qoute: DEFI is future
 github: anldrms
 ---
