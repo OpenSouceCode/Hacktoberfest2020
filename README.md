@@ -2,7 +2,7 @@
 
 Make your first Pull Request and earn a free tee from GitHub!
 
-![Hacktoberfest 2020](osc_hacktoberfest2020.png)
+![Hacktoberfest 2020](https://1.bp.blogspot.com/-efyL4l__DOs/X3twS7mS_kI/AAAAAAAAAQk/3roQYHohTZEXrSlT91cme0uD9Eg05ttcACLcBGAsYHQ/s2048/osc-hacktoberfest2020.GIF)
 
 
 <p align="center">
