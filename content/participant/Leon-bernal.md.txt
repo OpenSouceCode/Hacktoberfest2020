@@ -1,0 +1,3 @@
+name: Leon Bernal
+institution: Universidad_Autonoma_De_Queretaro
+github: Leon-bernal
