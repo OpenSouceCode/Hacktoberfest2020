@@ -62,4 +62,4 @@ _Do not use special characters in the template above._
 ## 4. Wait for Pull Request to merge
 
 ## 5. Celebrate - you've done your first pull request!!
-      Kudos! Now you can win a free Tshirt by Digital Ocean and Github.
+      Kudos! Now you can win a free Tshirt by DigitalOcean and Github.
