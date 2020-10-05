@@ -1,5 +1,5 @@
 ---
 name: Neeladri Pal
 institution: Jadavpur University
-github:neeladriOO7
+github: neeladriOO7
 ---
