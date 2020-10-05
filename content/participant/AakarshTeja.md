@@ -1,7 +1,7 @@
 ---
-Name: Aakarsh Teja
-institution: Vellore Institute of Technology
-image: AakarshTeja.jpg 
-quote: Dream comes true with hardwork
-github: AakarshTeja
+Name: Spencer Fulgham
+institution: UCSC
+image: Srfslvr14.jpg 
+quote: My best friend is the person who changes me
+github: Srfslvr14
 ---
