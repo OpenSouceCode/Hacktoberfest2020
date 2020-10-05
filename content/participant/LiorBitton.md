@@ -1,6 +1,6 @@
 ---
 name: Lior Bitton
-institution: Politecnico di Milano
+institution: cooldotgov
 image: LiorBitton.png
 quote: Show and tell
 github: LiorBitton
