@@ -1,4 +1,7 @@
 ---
-name:Lior Bitton
-institution: cool.gov(None)
-github:LiorBitton
+name: Lior Bitton
+institution: Politecnico di Milano
+image: LiorBitton.png
+quote: Show and tell
+github: LiorBitton
+---
