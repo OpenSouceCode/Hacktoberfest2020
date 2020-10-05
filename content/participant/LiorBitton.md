@@ -1,7 +1,7 @@
 ---
 name: Lior Bitton
 institution: cooldotgov
-image: LiorBitton.png
+image: LiorBitton.jpg
 quote: Show and tell
 github: LiorBitton
 ---
