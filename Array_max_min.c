@@ -1,13 +1,17 @@
 #include <stdio.h>
 
-int maximum(int A[], int n){
-    int mx = A[0];
-    for (int i = 1; i < n; i++)
-    {
-        if(mx < A[i]){
-            mx = A[i];
+int maximum(int a[],int n,int i)
+ {
+ 	   int max=0;;
+ 	   if(i<n)
+       {
+       	if(a[max]<a[i])
+       	 {
+			      max=i;
+			      maximum(a,n,++i);
+			      
         }
-    }
+	   }
     return mx;
     
 }
