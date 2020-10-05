@@ -1,0 +1,289 @@
+
+#include<stdio.h>
+struct node
+{
+	int data;
+	struct node *next;
+	struct node *prev;
+	
+};
+	struct node *top,*temp;
+int main()
+{
+	struct node *newnode;
+	top=0;
+    int value,option;
+    	printf("You are going to create dll\n\n");
+    do 
+    {
+    newnode=(struct node*) malloc(sizeof(struct node));
+	printf("Enter your data : ");
+	scanf("%d",&value);
+	newnode->data=value;
+	newnode->next=0;
+	newnode->prev=0;
+	if(top==0)
+	{
+		top=newnode;
+	
+	}
+	else
+	{
+	   newnode->next=top;
+	   top->prev=newnode;
+	   top=newnode;
+	}
+  	printf("Do want to continue[1/2] : ");
+    fflush(stdin);
+    scanf("%d",&option);
+    if(option!=1)
+    {
+    	printf("Thanx for chossing No\n");
+	}
+	else
+	{
+		printf("Thax for chossing YES\n");
+	}
+	}while(option==1);
+	
+	temp=top;
+	printf("The inserted data is : .........\n\n");
+   while(temp!=0)
+   {
+   	printf("%d ",temp->data);
+   	temp=temp->next;
+   }
+ while(1)
+   {
+   	 int option;
+     printf("\n\nEnter your option for Extra option like--------\n");
+     printf("1.Insert First\n2.Insert Last\n3.deleteFirst\n4.deleteLast\n5.Display\n6.deleteFromSpPosition\n7.Exit\n");
+     scanf("%d",&option);
+   	if(option<1 || option>7)
+   	{
+   	  continue;	
+	}
+	else
+	{
+		switch(option)
+	 {
+			case 1:
+			   insert_first();
+				 break;
+			case 2:
+			    insert_last();
+				 break;
+			case 3:
+			    deleteFirst(); 
+			    break;
+			case 4:
+				deleteLast();
+				break;
+			case 5:
+				//display();
+				break;
+			case 6:
+				deleteFromSpPosition();
+				break;
+		    case 7:
+		    	 exit(0);
+		    	 break;
+			default:
+			    printf("Plz enter a valid option!!\n");	 
+	 }
+       
+	}
+   	
+   }
+}
+
+void insert_first()
+{
+	int val;  
+    struct node *newnode = (struct node*)malloc(sizeof(struct node));   
+    if(newnode == NULL)  
+    {  
+        printf("not able to push the element");   
+    }  
+    else   
+    {  
+        printf("Enter the value : ");  
+        scanf("%d",&val);  
+        newnode->data = val;  
+        newnode-> next = NULL; 
+		newnode->prev=NULL; 
+        if(top==NULL)  
+        {         
+            
+            top=newnode;  
+        }   
+        else   
+        {  
+            newnode->next=top;
+	        top->prev=newnode;
+	        top=newnode;
+               
+        }  
+        printf("Item pushed");  
+          
+    }  
+    	printf("The inserted data is : .........\n\n");
+    	temp=top;
+   while(temp!=0)
+   {
+   	printf("%d ",temp->data);
+   	temp=temp->next;
+   }
+   
+}
+
+
+void insert_last()
+{
+	int val;  
+    struct node *newnode = (struct node*)malloc(sizeof(struct node));   
+    if(newnode == NULL)  
+    {  
+        printf("not able to push the element");   
+    }  
+    else   
+    {  
+        printf("Enter the value : ");  
+        scanf("%d",&val);  
+        newnode->data = val;  
+        newnode-> next = NULL; 
+		newnode->prev=NULL; 
+        if(top==NULL)  
+        {         
+            
+            top=newnode;  
+        }   
+        else   
+        {  
+           printf("Coming in last part");
+           temp=top;
+           while(temp->next!=0)
+           {
+           	temp=temp->next;
+		   }
+		    newnode->prev=temp;
+            temp->next=newnode;     
+        }  
+        printf("Item pushed");  
+          
+    }  
+    	printf("The inserted data is : .........\n\n");
+    	temp=top;
+   while(temp!=0)
+   {
+   	printf("%d ",temp->data);
+   	temp=temp->next;
+   }
+   
+}
+
+void deleteFirst()
+{
+int data;
+    struct node *ptr;  
+    if (top == NULL)  
+    {  
+        printf("Underflow");  
+    }  
+    else  
+    {  
+        data = top->data;  
+        ptr = top;  
+        top = top->next;  
+        top->prev=0;
+        printf("%d is deleted\n",data);
+        free(ptr);   
+          
+    }  
+   printf("The inserted data is : .........\n\n");
+   temp=top;
+   while(temp!=0)
+   {
+   	printf("%d ",temp->data);
+   	temp=temp->next;
+   }
+}
+
+void deleteLast()
+{
+	 struct node *ptr;
+
+    if(top == NULL)
+    {
+        printf("List is already empty.");
+    }
+    else
+    {
+        temp=top;
+        while(temp->next!=NULL)
+        {
+        	temp=temp->next;
+		}
+		ptr=temp;
+		temp->prev->next=0;
+		temp=temp->prev;
+        printf("\nData deleted = %d\n", ptr->data);
+        free(ptr);
+
+        printf("SUCCESSFULLY DELETED LAST NODE FROM LIST\n");
+    }
+    
+       temp=top;
+       printf("The element of list after insert element at the last position : ");
+       while(temp!=0)
+        {
+   	      printf("%d ",temp->data);
+          temp=temp->next;
+        }
+}
+
+void deleteFromSpPosition()
+{
+	struct node *ptr;
+		temp=top;
+	int position,i=0,value,count=0;
+	while(temp!=0)
+    {
+       count++;
+	   temp=temp->next;	
+    }  
+    
+   printf("%d is total element \n",count);
+labl1:
+   printf("Enter your position where you want to udate : ");
+   scanf("%d",&position);
+   if(position<0 || position>count)
+   {
+   	printf("Please enter a valid postion!!\n");
+   	goto labl1;
+   }
+   else
+   {
+   	 temp=top;
+   	   while(i<position-1)  
+   	   {
+   	      temp=temp->next;	
+   	      i++;
+	   }
+	    ptr=temp;
+		temp->next->prev=temp->prev;
+		temp->prev->next=temp->next;
+        printf("\nData deleted = %d\n", ptr->data);
+        free(ptr);
+	   
+       temp=top;
+       printf("The stack after updating : ");
+       while(temp!=0)
+        {
+   	      printf("%d ",temp->data);
+          temp=temp->next;
+
+        }
+   }
+}
+
