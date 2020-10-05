@@ -52,7 +52,7 @@ Copy the next template into your file, delete the boilerplate data and fill the 
 
 ```
 ---
-name: YOURNAME
+name: Hasini Uththara
 institution: INSTITUTION_NAME
 github:USERNAME
 ```
