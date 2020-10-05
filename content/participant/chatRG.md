@@ -1,4 +1,7 @@
 ---
 name: Sayan C
-institution: N/A
-github:chatRG
+institution: NA
+image: chatRG.png
+qoute: The only easy day was yesterday
+github: chatRG
+---
