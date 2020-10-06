@@ -63,3 +63,5 @@ _Do not use special characters in the template above._
 ## 4. Wait for Pull Request to merge
 
 ## 5. Celebrate - you've done your first pull request!!
+
+   Thank you!!!
