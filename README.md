@@ -28,7 +28,7 @@ Make your first Pull Request and earn a free tee from GitHub!
 
 # How to make your first Pull Request
 
-Replace `<YOUR-USERNAME>` with your GitHub username in this guide.
+Replace `dhruvilshah25` with your GitHub username in this guide.
 
 ## 1. Add your profile picture to the folder
 
