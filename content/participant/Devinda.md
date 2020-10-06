@@ -1,3 +1,3 @@
 name: Devinda Ravisara
-institution: NSBM
+institution: NSBM - SL
 github:devinda98
