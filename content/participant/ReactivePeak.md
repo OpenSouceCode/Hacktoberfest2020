@@ -1,6 +1,6 @@
 ---
-name: Ethan Quaresma
-institution: Central Coast New Tech
+Name: Ethan Quaresma
+insticution: Central Coast New Tech
 image: ReactivePeakStudios.png
-github:ReactivePeakStudios
+Github: ReactivePeakStudios
 ---
