@@ -66,5 +66,6 @@ int main()
 	{
 		cout<<arr[i]<<" ";
 	}
+	cout<<"Your Array is Sorted";
 	return 0;
 }
