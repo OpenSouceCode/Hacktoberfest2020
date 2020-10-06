@@ -12,7 +12,7 @@ int factorial(int num) {
 int main() { 
   
   int num, result;
-  printf("Insert the number: ");
+  printf("Insert the number to find its fatorial using Recursion: ");
   scanf("%d", &num);
   result = factorial(num);
   printf("Result = %d", result);
