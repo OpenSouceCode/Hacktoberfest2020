@@ -1,5 +1,7 @@
 ---
-name: Sudini Hemanth Reddy
-institution: MLR Institution of Technology
-github: [Hemanth987](https://github.com/Hemanth987)
+Name: Sudini Hemanth Reddy
+Institution: MLR Institution of Technology
+Image: Hemanth987.jpg
+Quote: Failure is a Key Towards sucess
+Github: Hemanth987
 ---
