@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="calc.css">
+    <title>calculator!</title>
+</head>
+
+<body>
+    <h1> <strong>Lets Calcuate</strong></h1> 
+    <div id="container">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1"> <strong> casino</strong></label>
+                <input type="text" class="form-control" id="input" aria-describedby="emailHelp">
+            
+                <div id="btn">
+                    <table>
+                        <tr>
+                            <td><button onclick="getinput(7)"  id="7" type="button" class="btn btn-dark my-2 mx-2">7</button></td>
+                            <td><button onclick="getinput(8)"  id="8" type="button" class="btn btn-dark my-2 mx-2">8</button></td>
+                            <td><button onclick="getinput(9)"  id="9" type="button" class="btn btn-dark my-2 mx-2">9</button></td>
+                            <td><button onclick="getinput('/')"  id="/" type="button" class="btn btn-dark my-2 mx-2">/</button></td>
+                            <td><button onclick="getinput('b')"  id="b" type="button" class="btn btn-dark my-2 mx-2">b</button></td>
+                        </tr>
+                        <tr>
+                           <td><button onclick="getinput(4)"  id="4" type="button" class="btn btn-dark my-2 mx-2">4</button></td>
+                           <td><button onclick="getinput(5)"  id="5" type="button" class="btn btn-dark my-2 mx-2">5</button></td>
+                           <td><button onclick="getinput(6)"  id="6" type="button" class="btn btn-dark my-2 mx-2">6</button></td>
+                           <td><button onclick="getinput('*')" id="x" type="button" class="btn btn-dark my-2 mx-2">X</button></td>
+                           <td><button onclick="getinput('%')" id="%" type="button" class="btn btn-dark my-2 mx-2">%</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="getinput(1)"  id="1" type="button" class="btn btn-dark my-2 mx-2">1</button></td>
+                            <td><button onclick="getinput(2)"  id="2" type="button" class="btn btn-dark my-2 mx-2">2</button></td>
+                            <td><button onclick="getinput(3)"  id="3" type="button" class="btn btn-dark my-2 mx-2">3</button> </td>
+                            <td><button onclick="getinput('-')"  id="-" type="button" class="btn btn-dark my-2 mx-2">-</button></td>    
+                        </tr>
+                        
+                            <td><button onclick="getinput('=')"  id="equal" type="button" class="btn btn-dark my-2 mx-2 red">=</button></td>
+  
+                        <tr id="last">
+                            <td><button onclick="getinput(0)"  id="0" type="button" class="btn btn-dark my-2 mx-2">0</button></td>
+                            <td><button onclick="getinput('.')" id="." type="button" class="btn btn-dark my-2 mx-2">.</button></td>
+                            <td><button onclick="getinput('c')"  id="c" type="button" class="btn btn-dark my-2 mx-2">C</button></td>
+                            <td><button onclick="getinput('+')"  id="+" type="button" class="btn btn-dark my-2 mx-2">+</button></td>
+                            
+                        </tr>
+                    </table>
+                    
+                    
+                </div>
+                
+
+            </div>    
+                
+        </form>        
+    </div>
+
+
+
+
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+                <script src="calc.js"></script>
+</body>
+
+</html>

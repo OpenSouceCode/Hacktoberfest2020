@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    
+    margin: 34px 0px 0px 279px;
+    width: 46%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    background-color: lightslategray;
+    height: 325px;
+}
+#input{
+    width: 300px;
+    border: 4px solid lightblue;
+}
+.btn-dark:hover {
+    color: #191818;
+    background-color: #f2f6f9;
+    border-color: #f1f4f7;
+}
+.red{
+    background-color: red;
+    position: absolute;
+    top: 110px;
+    left: 205px;
+    height: 83px;
+    
+}
+table{
+    position: relative;
+    margin: 24px 0px 0px 0;
+}
+#last{
+    position: absolute;
+    top: 160px;
+    left: 3px;
+
+}
