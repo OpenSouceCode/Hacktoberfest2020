@@ -1,5 +1,7 @@
 ---
-name: Ahijeet
+name: Abhijeet Dhanwate
 institution: MIT Pune
-github:coderAbhii
+image: coderAbhii.jpg
+quote: Living like a Decoder 
+github: coderAbhii
 ---
