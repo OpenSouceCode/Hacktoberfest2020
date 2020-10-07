@@ -15,7 +15,7 @@ Make your first Pull Request and earn a free tee from GitHub!
 
 ## This project is perfect for your first pull request
 
-## Instructions-
+## Instructions to follow
 
 - Fork this Repository using the button at the top
 - Clone your forked repository to your pc ( git clone "url from clone option.)
@@ -62,4 +62,4 @@ _Do not use special characters in the template above._
 
 ## 4. Wait for Pull Request to merge
 
-## 5. Celebrate - you've done your first pull request!!
+## 5. Celebrate - you've done your first pull request!! well Done 
