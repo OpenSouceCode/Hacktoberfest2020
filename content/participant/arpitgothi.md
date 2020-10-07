@@ -1,3 +1,3 @@
 name: Arpit
-institution: own
+institution: Own
 github:arpitgothi
