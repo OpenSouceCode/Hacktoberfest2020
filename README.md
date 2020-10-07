@@ -1,4 +1,4 @@
-# Hacktoberfest2020---its a very good project and get a free tshirt.
+# Hacktoberfest2020...its a very good project and get a free t-shirt.
 
 Make your first Pull Request and earn a free tee from GitHub!
 
@@ -28,7 +28,7 @@ Make your first Pull Request and earn a free tee from GitHub!
 
 # How to make your first Pull Request
 
-Replace `<YOUR-USERNAME>` with your GitHub username in this guide.
+Replace `<hello-world>` with your GitHub username in this guide.
 
 ## 1. Add your profile picture to the folder
 
