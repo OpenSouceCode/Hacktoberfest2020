@@ -1,5 +1,7 @@
- ---
+---
 name: Aditya Prakash
-institution: Manipal Institute of Technology
-github:aditya99prakash
+institution: MIT Manipal
+image: aditya99prakash.jpg
+quote: "code is life"
+github: aditya99prakash
 ---
