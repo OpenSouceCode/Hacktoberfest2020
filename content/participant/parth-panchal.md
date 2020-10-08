@@ -1,5 +1,5 @@
 ---
 name: Parth Panchal
 institution: Nirma University
-github:parth-panchal
+github: parth-panchal
 ---
