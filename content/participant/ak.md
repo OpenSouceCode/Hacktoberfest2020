@@ -1,7 +1,6 @@
-## This is my first commit !
+## This is my first commit😃!
 ---
-Name : AK
-university: UIT
-image: ak.jpg
+name: AK
+institution: UIT
 github: AungKOO
 ---
