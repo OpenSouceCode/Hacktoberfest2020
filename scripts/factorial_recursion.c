@@ -1,12 +1,12 @@
 #include <stdio.h> 
 
-int factorial(int num) {
+int fact(int num) {
 
   if(num <= 1) {
     return 1;
   }
   
-  return num * factorial(num-1);
+  return num * fact(num-1);
 }
 
 int main() { 
@@ -14,7 +14,7 @@ int main() {
   int num, result;
   printf("Insert the number: ");
   scanf("%d", &num);
-  result = factorial(num);
-  printf("Result = %d", result);
+  //result = fact(num);
+  printf("Result = %d", fact(num));
 	return 0; 
 }
