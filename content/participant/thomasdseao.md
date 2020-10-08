@@ -1,5 +1,5 @@
 ---
-name: thomasdseao
+name: Thomas D
 institution: EMP
-github:thomasdseao
+github: thomasdseao
 ---
