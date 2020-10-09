@@ -1,3 +1,3 @@
 name: AKHIKESH
-institution: private school
+institution: private 
 github:akhilesh120
