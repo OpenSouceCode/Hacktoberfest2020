@@ -1,5 +1,5 @@
 ---
 name: Imge Ildan
 institution: Kocaeli University
-github:imgeildan
+github: imgeildan
 ---
