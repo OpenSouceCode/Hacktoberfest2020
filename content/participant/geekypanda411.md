@@ -1,5 +1,6 @@
 ---
 name: Aarjav Parashar
 institution: NIT Hamirpur
-github:geekypanda411
+image: geekypanda411
+github: geekypanda411
 ---
