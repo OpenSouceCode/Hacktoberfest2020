@@ -1,5 +1,5 @@
 ---
 name: Maureen Landgraf
 institution: Saint Louis University
-github:mlandgraf1
+github: mlandgraf1
 ---
