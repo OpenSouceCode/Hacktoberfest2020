@@ -1,5 +1,7 @@
 ---
-name: Thisura
+name: Thisura Dinith
 institution: SLIIT
-github:THISURA97
+image: 38825184.jpg
+qoute: I am anti-social
+github: THISURA97
 ---
