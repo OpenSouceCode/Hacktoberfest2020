@@ -1,5 +1,7 @@
 ---
 name: Uwais Alqadri
 institution: IDN Boarding School
-github:uwais123
+image: uwais123.png
+quote: "Infinite Learning."
+github: uwais123
 ---
