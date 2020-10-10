@@ -2,6 +2,6 @@
 name: Aman Kumar
 institution: Sardar Vallabhbhai National Institute of Technology
 image: GrimRK.jpg
-quote: Never lose hope
+quote: Not Backing Down 
 github: GrimRK
 ---
