@@ -1,5 +1,5 @@
 ---
 name: Dibyajyoti Mondal
 institution: Jadavpur University
-github:djm-1
+github: djm-1
 ---
