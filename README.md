@@ -61,5 +61,6 @@ github:USERNAME
 _Do not use special characters in the template above._
 
 ## 4. Wait for Pull Request to merge
+#Well it is not compulsory that someone will merge your pull request always, So try to contribute more.
 
 ## 5. Celebrate - you've done your first pull request!!
