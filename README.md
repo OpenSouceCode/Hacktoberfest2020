@@ -28,24 +28,24 @@ Make your first Pull Request and earn a free tee from GitHub!
 
 # How to make your first Pull Request
 
-Replace `<YOUR-USERNAME>` with your GitHub username in this guide.
+Replace djm-1 with your GitHub username in this guide.
 
 ## 1. Add your profile picture to the folder
 
 Add a picture picture of your choice in `static/images/`. Accepted files are **png** and **jpg**, should be squared and minimum size 544x544 pixels. Ex.
 
 ```
-static/images/<YOUR-USERNAME>.png
+static/images/djm-1.png
 ```
 
 _Be aware, this picture will be displayed on the yearbook!_
 
 ## 2. Add your profile information
 
-Create a markdown file in your folder following the convention `content/participant/<YOUR-USERNAME>.md`. Ex.
+Create a markdown file in your folder following the convention `content/participant/djm-1.md`. Ex.
 
 ```
-content/participant/<YOUR-USERNAME>.md/
+content/participant/djm-1.md/
 ```
 
 Copy the next template into your file, delete the boilerplate data and fill the information with yours.
