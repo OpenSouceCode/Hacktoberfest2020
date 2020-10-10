@@ -31,13 +31,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
-workflow "Image optimization" {
-  on = "push"
-  resolves = ["image-optimizer-action"]
-}
-
-action "image-optimizer-action" {
-  uses = "giantswarm/image-optimizer-action@master"
-  secrets = ["GITHUB_TOKEN"]
-}
