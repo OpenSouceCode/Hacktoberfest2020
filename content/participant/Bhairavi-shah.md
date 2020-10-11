@@ -3,7 +3,7 @@ Name          : Bhairavi Shah
 Institution   : Model Engineering College
 Image         : bhairavi.jpg
 Quote         : Everything happens for the good.
-Github Handle : bhairavi-shah
+Github Handle : Bhairavi-shah
 ---
 
 
