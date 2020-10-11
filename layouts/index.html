@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>{{ .Title }}</title>
+    <title>{{ Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -18,7 +18,8 @@
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-173001988-1"
-    ></script>
+    >
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -29,16 +30,16 @@
       gtag("config", "UA-173001988-1");
     </script>
   </head>
-  <body>
+  <body bgcolor="BLACK" text="RED">
     <!-- partial:index.partial.html -->
-    <h1 class="title">Open Source Code - Hacktoberfest 2020</h1>
+    <H1 class="title">Open Source Code - Hacktoberfest 2020</H1>
 
     <div id="app" class="container">
       <card
         data-image="https://raw.githubusercontent.com/aryasoni98/aryasoni98.github.io/master/img/aryasoni.jpg"
         data-github="aryasoni98"
       >
-        <h1 slot="header">Arya Soni</h1>
+        <H1 slot="header">Arya Soni</H1>
         <p slot="content">Netaji Subhas University of Technology</p>
       </card>
 
@@ -47,9 +48,9 @@
         data-github="{{ .Params.github }}"
         data-image="/images/{{ .Params.image }}"
       >
-        <h1 slot="header">
+        <H1 slot="header">
           {{ .Params.name }}
-        </h1>
+        </H1>
         <p slot="content">
           {{ .Params.institution }}
         </p>
@@ -57,7 +58,9 @@
       {{ end }}
     </div>
     <!-- partial -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
-    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js">
+    </script>
+    <script src="/script.js">
+    </script>
   </body>
 </html>
