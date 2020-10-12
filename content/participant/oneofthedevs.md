@@ -1,5 +1,5 @@
 ---
 name: Dev Chhaniyara
 institution: GTU
-github:oneofthedevs
+github: oneofthedevs
 ---
