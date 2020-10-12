@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-int merge(int arr[],int start, int mid,int mid2, int end)
+int merge(int arr[],int start, int mid,int end)
 {
-	int size1 = mid2 - start; 
+	int size1 = mid+1 - start; 
     int size2 = end - mid; 
   
     int arr1[size1], arr2[size2]; 
@@ -10,7 +10,7 @@ int merge(int arr[],int start, int mid,int mid2, int end)
     for (int i = 0; i < size1; i++) 
         arr1[i] = arr[start + i]; 
     for (int j = 0; j < size2; j++) 
-        arr2[j] = arr[mid2 + j]; 
+        arr2[j] = arr[mid+1 + j]; 
   	int i = 0; 
     int j = 0; 
     int k = start;
@@ -40,15 +40,12 @@ int merge(int arr[],int start, int mid,int mid2, int end)
 }
 int mergesort(int arr[], int start, int end)
 {
-	if(start == end)
-		return arr[start];
-	
-	else
+	if(start<end)
 	{
 		int mid = (start + end )/2;
 		mergesort(arr,start,mid);
 		mergesort(arr,mid+1,end);
-		merge(arr,start,mid, mid+1 , end);
+		merge(arr,start,mid, end);
 	}
 }
 int main()
