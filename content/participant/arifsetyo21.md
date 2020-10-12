@@ -1,7 +1,5 @@
 ---
-name: Arif Setyo Nugroho :smile:
+name: Arif Setyo Nugroho
 institution: Universitas Amikom Yogyakarta
-image: arifsetyo21.jpg
-quote: Win or learn, never lose :smile:
 github: arifsetyo21
 ---
