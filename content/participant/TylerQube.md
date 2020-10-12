@@ -1,3 +1,3 @@
-name: Tyler Smith
+name: TylerSmith
 institution: IMSA
 github: TylerQube
