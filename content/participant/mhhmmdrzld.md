@@ -1,5 +1,5 @@
 ---
 name: Muhammad Rizaldi
-institution: CV. RUTIK ID
+institution: Islamic University of Muhammad Arsyad Al Banjari Kalimantan
 github: mhmmdrzld
 ---
