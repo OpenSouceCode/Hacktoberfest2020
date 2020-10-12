@@ -52,9 +52,11 @@ Copy the next template into your file, delete the boilerplate data and fill the 
 
 ```
 ---
-name: YOURNAME
+name: YOUR_NAME
 institution: INSTITUTION_NAME
-github:USERNAME
+image: PROFILE_PICTURE_FILENAME
+quote: YOUR_QUOTE
+github: USERNAME
 ---
 ```
 
