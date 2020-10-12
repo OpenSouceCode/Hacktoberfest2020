@@ -1,7 +1,7 @@
 ---
-Name: Anitta P Markose
-Institution: MITS Kochi
-Image: anittapm.jpeg
-Quote: Never stop until you get it right!
-Github: anittapm1708
+name: Anitta P Markose
+institution: Muthoot Institute of Technology and Science, Kochi
+image: anittapm.jpeg
+quote: Never stop until you get it right!
+github: anittapm1708
 ---
