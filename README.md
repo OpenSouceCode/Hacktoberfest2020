@@ -47,7 +47,7 @@ Create a markdown file in your folder following the convention `content/particip
 ```
 content/participant/<YOUR-USERNAME>.md/
 ```
-
+## 3. Copy
 Copy the next template into your file, delete the boilerplate data and fill the information with yours.
 
 ```
