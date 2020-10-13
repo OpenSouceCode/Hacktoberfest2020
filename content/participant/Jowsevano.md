@@ -1,7 +1,7 @@
 ---
 name: Archana Jowsevano
 institution: UNDERAM
-image: hehehe.jpg
+image: Jowsevano.jpg
 qoute: i love chinese girls
-github: jowsevano
+github: Jowsevano
 ---
