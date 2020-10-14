@@ -1,0 +1,462 @@
+
+18Bcs6131(case-study-2) (1).ipynb
+18Bcs6131(case-study-2) (1).ipynb_
+Himanshu Kunchal
+18BCS6131
+AI&ML1(Group-B)
+Case Study-2(LogisticRegression)
+Double-click (or enter) to edit
+
+[ ]
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import warnings
+warnings.filterwarnings('ignore')
+from sklearn.model_selection import train_test_split
+import statsmodels.api as sm
+from sklearn.linear_model import LogisticRegression
+from sklearn import metrics
+[ ]
+# Read the data..
+df_train = pd.read_csv("train.csv")
+df_test = pd.read_csv("test.csv")
+Data Understanding
+[ ]
+# Check the top values of training data set.
+df_train.head()
+
+[ ]
+# Check the lower values of training data set.
+df_train.tail()
+
+[ ]
+df_train.describe()
+
+
+[ ]
+df_train.shape
+
+[ ]
+df_train.info()
+
+[ ]
+df_train.columns
+
+[ ]
+df_train.corr()
+
+Data Cleaning
+Some columns have a large number of missing values, let's first fix the missing values and then check for other types of data quality problems.
+
+[ ]
+# summarising number of missing values in each column
+df_train.isnull().sum()
+
+[ ]
+# percentage of missing values in each column
+round(df_train.isnull().sum()/len(df_train.index), 2)*100
+
+[ ]
+#Check the missing Columns
+missing_columns = df_train.columns[100*(df_train.isnull().sum()/len(df_train.index)) > 70]
+print(missing_columns)
+
+[ ]
+# Drop the column which has large missing value
+df_train = df_train.drop(missing_columns, axis=1)
+print(df_train.shape)
+
+[ ]
+# summarise number of missing values again
+100*(df_train.isnull().sum()/len(df_train.index))
+
+[ ]
+# fill the empty places with mean or maximum used value
+df_train.Age = df_train.Age.fillna(df_train.Age.mean())
+df_train.Embarked = df_train.Embarked.fillna('S')
+[ ]
+# summarise number of missing values again
+100*(df_train.isnull().sum()/len(df_train.index))
+
+[ ]
+#now check the data again
+df_train.info()
+
+[ ]
+df_train.head()
+
+Now see there is no missing value in our data..so out data is cleaned
+
+Data Analysis and Outlier Handling
+Let's now move to data analysis
+
+[ ]
+sns.pairplot(df_train)
+plt.show()
+
+From the graph we see that there is lot of outtliers in the case of (fare,age)columns.
+
+[ ]
+#change outlier value with mean
+# AGE
+df_train.Age[(df_train.Age> 75)] = (df_train.Age.mean())
+# FARE
+df_train.Fare[(df_train.Fare> 500)] = (df_train.Fare.mean())
+[ ]
+#check the values again
+sns.pairplot(df_train)
+plt.show()
+
+Analyze by pivoting features
+TO CHECK HOW MUCH A PART OF COLUMN AFFECT THE MODEL
+
+[ ]
+df_train[['Pclass', 'Survived']].groupby(['Pclass'], as_index=False).mean().sort_values(by='Survived', ascending=False)
+
+[ ]
+df_train[["Sex", "Survived"]].groupby(['Sex'], as_index=False).mean().sort_values(by='Survived', ascending=False)
+
+[ ]
+df_train[["SibSp", "Survived"]].groupby(['SibSp'], as_index=False).mean().sort_values(by='Survived', ascending=False)
+
+[ ]
+df_train[["Parch", "Survived"]].groupby(['Parch'], as_index=False).mean().sort_values(by='Survived', ascending=False)
+
+[ ]
+df_train[["Embarked", "Survived"]].groupby(['Embarked'], as_index=False).mean().sort_values(by='Survived', ascending=False)
+
+[ ]
+# boxplot acc to age of passengers...
+plt.figure(figsize=(10,7))
+sns.boxplot(x='Pclass', y='Age', data=df_train)
+
+[ ]
+# boxplot acc to SibSp of passengers...
+plt.figure(figsize=(10,7))
+sns.boxplot(x='SibSp', y='Age', data=df_train)
+
+[ ]
+# boxplot acc to Sex of passengers...
+plt.figure(figsize=(10,7))
+sns.boxplot(x='Sex', y='Age', data=df_train)
+
+[ ]
+# boxplot acc to Parch of passengers...
+plt.figure(figsize=(10,7))
+sns.boxplot(x='Parch', y='Age', data=df_train)
+
+[ ]
+# boxplot acc to Embarked of passengers...
+plt.figure(figsize=(10,7))
+sns.boxplot(x='Embarked', y='Age', data=df_train)
+
+[ ]
+#plot a heat map
+plt.figure(figsize=(30,10))
+sns.heatmap(df_train.corr(),annot=True,cmap="YlGnBu")
+plt.show()
+
+[ ]
+# Make the dummy variables for the feature 'Sex' and concat it with dataframe
+# Let's drop the first column from status df using 'drop_first = True'
+abc = pd.get_dummies(df_train['Sex'], drop_first = True)
+df_train = pd.concat([df_train, abc], axis = 1)
+df_train.head()
+
+[ ]
+# Make the dummy variables for the feature 'Embarked' and concat it with dataframe
+# Let's drop the first column from status df using 'drop_first = True'
+abc = pd.get_dummies(df_train['Embarked'], drop_first = True)
+df_train = pd.concat([df_train, abc], axis = 1)
+df_train.head()
+
+[ ]
+# Make the dummy variables for the feature 'Pclass' and concat it with dataframe
+# Let's drop the first column from status df using 'drop_first = True'
+abc = pd.get_dummies(df_train['Pclass'], drop_first = True)
+df_train = pd.concat([df_train, abc], axis = 1)
+df_train.head()
+
+[ ]
+#Dropping the redundant features which were converted to dummies earlier
+df_train.drop(['Sex', 'Embarked','Pclass','Name', 'Ticket'], axis=1, inplace=True)
+Dividing into X and Y sets for the model building
+[ ]
+x_train = df_train.loc[:, df_train.columns != 'Survived']
+y_train=  df_train['Survived']
+Building our model Using RFE
+Check RFE Value
+[ ]
+from sklearn.feature_selection import RFE
+clf_lr = LogisticRegression()
+clf_lr.fit(x_train,y_train)
+rfe = RFE(clf_lr, 10)             # running RFE
+rfe = rfe.fit(x_train, y_train)
+[ ]
+list(zip(x_train.columns,rfe.support_,rfe.ranking_))
+
+[ ]
+col = x_train.columns[rfe.support_]
+col
+
+[ ]
+# Creating X_test dataframe with RFE selected variables
+x_train_new = x_train[col]
+[ ]
+x_train_new = sm.add_constant(x_train_new)
+lm = sm.GLM(y_train,x_train_new,family = sm.families.Binomial())
+res=lm.fit()
+res.summary()
+
+[ ]
+y_train_pred = res.predict(x_train_new)
+y_train_pred[:10]
+
+[ ]
+y_train_pred = y_train_pred.values.reshape(-1)
+y_train_pred[:10]
+
+Creating the dataframe with actual value and predicted value
+[ ]
+y_train_final =  pd.DataFrame({'Survived':y_train.values,"Survived_prob":y_train_pred})
+y_train_final["Id"]= x_train_new.PassengerId
+y_train_final.head()
+
+[ ]
+# create new column as predict which tell about the predicted value is 1 if prob>0.5 else 0
+y_train_final['PredictedValue'] = y_train_final.Survived_prob.map(lambda x:1 if x>0.5 else 0)
+y_train_final.head()
+
+[ ]
+# make a confusion matrix
+from sklearn.metrics import confusion_matrix
+confusion_matrix(y_train, y_train_final.PredictedValue)
+
+[ ]
+from sklearn.metrics import accuracy_score
+accuracy_score(y_train, y_train_final.PredictedValue)
+
+Checking VIF Values
+[ ]
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+vif = pd.DataFrame()
+vif['Features'] = x_train.columns
+vif['VIF'] = [variance_inflation_factor(x_train.values, i) for i in range(x_train.shape[1])]
+vif['VIF'] = round(vif['VIF'], 2)
+vif = vif.sort_values(by = "VIF", ascending = False)
+vif
+
+Drop the columns which has VIF greater than 5
+
+[ ]
+x_train = x_train.drop('Age',axis =1)
+[ ]
+# check vif again
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+vif = pd.DataFrame()
+vif['Features'] = x_train.columns
+vif['VIF'] = [variance_inflation_factor(x_train.values, i) for i in range(x_train.shape[1])]
+vif['VIF'] = round(vif['VIF'], 2)
+vif = vif.sort_values(by = "VIF", ascending = False)
+vif
+
+[ ]
+#fit the model again and check the accuracy again
+x_train = sm.add_constant(x_train)
+lm = sm.GLM(y_train,x_train,family = sm.families.Binomial())
+res=lm.fit()
+res.summary()
+
+[ ]
+# make a confusion matrix
+from sklearn.metrics import confusion_matrix
+confusion = confusion_matrix(y_train_final.Survived, y_train_final.PredictedValue)
+confusion
+
+[ ]
+from sklearn.metrics import accuracy_score
+accuracy_score(y_train, y_train_final.PredictedValue)
+
+Now we see that there is not effect in accurracy score so age column do not effect our model.
+
+Performance metrics
+Precision
+precision=True PositivesTrue Positives+False Positives
+Recall
+recall=True PositivesTrue Positives+False Negatives
+AUC (ROC)
+[ ]
+TP = confusion[1,1]
+TN = confusion[0,0]
+FP = confusion[0,1]
+FN = confusion[1,0]
+[ ]
+#Check Senstivity
+TP / float(TP+FN)
+
+[ ]
+# Check Specificity
+TN / float(TN+FP)
+
+[ ]
+# False Positive Rate
+FN / float(TN+FP)
+
+Plot Roc Curve
+[ ]
+def plt_roc(actual,probs):
+    fpr,tpr,threshold = metrics.roc_curve(actual,probs,drop_intermediate=False)
+    auc_score=metrics.roc_auc_score(actual,probs)
+    plt.figure(figsize=(5,5))
+    plt.plot(fpr,tpr,label='ROC Curve(area = %0.2f)' %auc_score)
+    plt.plot([0,1],[0,1],'k--')
+    plt.xlim([0.00,1.00])
+    plt.ylim([0.00,1.05])
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+
+[ ]
+fpr,tpr,threshold = metrics.roc_curve(y_train_final.Survived,y_train_final.Survived_prob,drop_intermediate=False)
+plt_roc(y_train_final.Survived,y_train_final.Survived_prob)
+
+Find Optimal Cuttoff Point
+[ ]
+# lets check for all points
+numbers = [float(x)/10 for x in range(10)]
+for i in numbers:
+    y_train_final[i] = y_train_final.Survived_prob.map(lambda x:1 if x>i else 0)
+y_train_final.head()
+
+[ ]
+# Calculate accuracy,specificity and sensitivity for all d points...
+df = pd.DataFrame(columns=['prob','Accuracy','Senstivity','Specificity'])
+var = [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]
+for i in var:
+    cm = confusion_matrix(y_train_final.Survived,y_train_final[i])
+    total=sum(sum(cm))
+    Accuracy = (cm[0,0]+cm[1,1])/total
+    Specificity = cm[0,0]/(cm[0,0]+cm[0,1])
+    Senstivity = cm[1,1]/(cm[1,1]+cm[1,0])
+    df.loc[i]  = [i,Accuracy,Senstivity,Specificity]
+
+
+[ ]
+df.plot.line(x='prob',y=['Accuracy','Senstivity','Specificity'])
+plt.show()
+
+From the above graph we see that the cutoff point is approx 0.4
+
+[ ]
+y_train_final['FinalPredictedValue'] = y_train_final.Survived_prob.map(lambda x:1 if x>0.4 else 0)
+y_train_final.head()
+
+[ ]
+accuracy_score(y_train_final.Survived,y_train_final.FinalPredictedValue)
+
+[ ]
+cnfsn = confusion_matrix(y_train_final.Survived, y_train_final.FinalPredictedValue)
+cnfsn
+
+[ ]
+TP = cnfsn[1,1]
+TN = cnfsn[0,0]
+FP = cnfsn[0,1]
+FN = cnfsn[1,0]
+[ ]
+#Check Senstivity
+TP / float(TP+FN)
+
+[ ]
+# Check Specificity
+TN / float(TN+FP)
+
+[ ]
+# False Positive Rate
+FN / float(TN+FP)
+
+Precision and Recall
+[ ]
+cnfsn = confusion_matrix(y_train_final.Survived, y_train_final.FinalPredictedValue)
+cnfsn
+
+[ ]
+from sklearn.metrics import precision_score, recall_score
+# Precision
+print("Precision = ",precision_score(y_train_final.Survived, y_train_final.FinalPredictedValue))
+# Recall
+print("Recall = ",recall_score(y_train_final.Survived, y_train_final.FinalPredictedValue))
+
+[ ]
+# plot graph
+from sklearn.metrics import precision_recall_curve
+p,r,threshold = precision_recall_curve(y_train_final.Survived, y_train_final.Survived_prob)
+plt.plot(threshold,p[:-1],"r--")## Red in Colour
+plt.plot(threshold,r[:-1],"b--")## Blue in Colour
+plt.show()
+
+
+Now make predictions on test data.
+We firstly make test data according to out model
+[ ]
+abc = pd.get_dummies(df_test['Sex'], drop_first = True)
+df_test = pd.concat([df_test, abc], axis = 1)
+abc1 = pd.get_dummies(df_test['Embarked'], drop_first = True)
+df_test = pd.concat([df_test, abc1], axis = 1)
+abc2 = pd.get_dummies(df_test['Pclass'], drop_first = True)
+df_test = pd.concat([df_test, abc2], axis = 1)
+[ ]
+# drop the columns
+x_test = df_test.drop(['Pclass','Name','Age','Sex','Cabin','Ticket','Embarked','Survived'],axis =1)
+[ ]
+y_test = df_test['Survived']
+[ ]
+x_test.head()
+
+[ ]
+x_test_sm = sm.add_constant(x_test)
+Now we will make predictions with the help of trained model
+
+[ ]
+y_test_pred = res.predict(x_test_sm)
+y_test_pred[:15]
+
+[ ]
+# make new dataframe
+df_y = pd.DataFrame(y_test)
+df_y['Id'] = x_test.PassengerId
+df_y['Survived'] = df_test.Survived
+df_y['Survived_Prob'] = y_test_pred
+df_y.head()
+
+From the precision recall graph the optimal point = 0.5
+
+[ ]
+df_y['FinalPredicted'] = df_y.Survived_Prob.map(lambda x : 1 if x>0.5 else 0)
+df_y.head()
+
+[ ]
+accuracy_score(df_y.Survived,df_y.FinalPredicted)
+
+[ ]
+# make a confusion matrix
+from sklearn.metrics import confusion_matrix
+confusion3 = confusion_matrix(df_y.Survived,df_y.FinalPredicted)
+confusion3
+
+[ ]
+TP = confusion3[1,1]
+TN = confusion3[0,0]
+FP = confusion3[0,1]
+FN = confusion3[1,0]
+[ ]
+#Check Senstivity
+TP / float(TP+FN)
+
+[ ]
+# Check Specificity
+TN / float(TN+FP)
+
+Thank You...........
+Loading...
