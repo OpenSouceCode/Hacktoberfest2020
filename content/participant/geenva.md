@@ -1,7 +1,7 @@
 ---
 Name: geneva
 institution: inkthought labs
-image: flarely.png
+image: geenva.png
 quote: remember to git pull
-github: flarely
+github: geenva
 ---
