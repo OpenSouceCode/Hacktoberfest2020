@@ -6,11 +6,16 @@ Make your first Pull Request and earn a free tee from GitHub!
 
 
 <p align="center">
-   <img alt="GitHub issues" src="https://img.shields.io/github/issues/OpenSouceCode/Hacktoberfest2020"></a>
-   <img alt="GitHub forks" src="https://img.shields.io/github/issues/OpenSouceCode/Hacktoberfest2020"></a>
-   <img alt="GitHub stars" src="https://img.shields.io/github/stars/OpenSouceCode/Hacktoberfest2020"></a>
-   <img alt="Github license" src="https://img.shields.io/github/license/OpenSouceCode/Hacktoberfest2020"></a>
+   <a href="https://github.com/OpenSouceCode/Hacktoberfest2020/issues" alt="Github issues">
+        <img src="https://img.shields.io/github/issues/OpenSouceCode/Hacktoberfest2020"/></a>
+   <a href="https://github.com/OpenSouceCode/Hacktoberfest2020/stargazers" alt="Github stars">
+        <img src="https://img.shields.io/github/stars/OpenSouceCode/Hacktoberfest2020"/></a>
+   <a href="https://github.com/OpenSouceCode/Hacktoberfest2020/network/members" alt="Github forks">
+        <img src="https://img.shields.io/github/forks/OpenSouceCode/Hacktoberfest2020"/></a>
+   <a href="https://github.com/OpenSouceCode/Hacktoberfest2020/blob/master/LICENSE" alt="Github license">
+        <img src="https://img.shields.io/github/license/OpenSouceCode/Hacktoberfest2020"/></a>
 </p>
+
 # Welcome to GitHub!
 
 ## This project is perfect for your first pull request
