@@ -31,28 +31,28 @@
   </head>
   <body>
     <!-- partial:index.partial.html -->
-    <h1 class="title">Open Source Code - Hacktoberfest 2020</h1>
-
+    <h1 > <B> Open Source Code - Hacktoberfest 2020 </B></h1> <br>
+    <img  src="../layouts/49bd387c40e2c5aada92abdf973bc46d.webp" alt="gambar" height="10%" width="10%">
     <div id="app" class="container">
       <card
         data-image="https://raw.githubusercontent.com/aryasoni98/aryasoni98.github.io/master/img/aryasoni.jpg"
         data-github="aryasoni98"
       >
-        <h1 slot="header">Arya Soni</h1>
-        <p slot="content">Netaji Subhas University of Technology</p>
-      </card>
+        <h1>Arya Soni</h1> <br>
+        <p>Netaji Subhas University of Technology</p> <br>
+      </card> 
 
-      {{ range (where .Site.RegularPages "Section" "participant") }}
-      <card
+     <p slot="header"> {{ range (where .Site.RegularPages "Section" "participant") }} </p> <br>
+      <card 
         data-github="{{ .Params.github }}"
         data-image="/images/{{ .Params.image }}"
-      >
+      > <br>
         <h1 slot="header">
           {{ .Params.name }}
-        </h1>
+        </h1> <br>
         <p slot="content">
           {{ .Params.institution }}
-        </p>
+        </p> <br>
       </card>
       {{ end }}
     </div>
