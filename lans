@@ -1,0 +1,24 @@
+Wireless LANs are those Local Area Networks that use high frequency radio waves instead of cables for connecting the devices in LAN. Users connected by WLANs can move around within the area of network coverage. Most WLANs are based upon the standard IEEE 802.11 or WiFi.
+IEEE 802.11 Architecture
+The components of an IEEE 802.11 architecture are as follows
+1) Stations (STA) − Stations comprise all devices and equipments that are connected to the wireless LAN. A station can be of two types:
+•	Wireless Access Pointz (WAP) − WAPs or simply access points (AP) are generally wireless routers that form the base stations or access.
+•	Client. − Clients are workstations, computers, laptops, printers, smartphones, etc.
+Each station has a wireless network interface controller.
+2) Basic Service Set (BSS) −A basic service set is a group of stations communicating at physical layer level. BSS can be of two categories depending upon mode of operation:
+•	Infrastructure BSS − Here, the devices communicate with other devices through access points.
+•	Independent BSS − Here, the devices communicate in peer-to-peer basis in an ad hoc manner.
+3) Extended Service Set (ESS) − It is a set of all connected BSS.
+4) Distribution System (DS) − It connects access points in ESS.
+ 
+Advantages of WLANs
+•	They provide clutter free homes, offices and other networked places.
+•	The LANs are scalable in nature, i.e. devices may be added or removed from the network at a greater ease than wired LANs.
+•	The system is portable within the network coverage and access to the network is not bounded by the length of the cables.
+•	Installation and setup is much easier than wired counterparts.
+•	The equipment and setup costs are reduced.
+Disadvantages of WLANs
+•	Since radio waves are used for communications, the signals are noisier with more interference from nearby systems.
+•	Greater care is needed for encrypting information. Also, they are more prone to errors. So, they require greater bandwidth than the wired LANs.
+•	WLANs are slower than wired LANs.
+
