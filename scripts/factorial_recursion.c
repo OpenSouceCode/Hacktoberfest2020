@@ -8,7 +8,7 @@ int factorial(int num) {
   
   return num * factorial(num-1);
 }
-
+% factorial finding
 int main() { 
   
   int num, result;
