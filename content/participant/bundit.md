@@ -1,6 +1,6 @@
 ---
 Name: Bundit Wisedphanit
-institution: MJU 
+institution: MJU Maejo University 
 image: bundit.jpg 
 github: BunditSpace
 ---
