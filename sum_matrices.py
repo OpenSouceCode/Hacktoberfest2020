@@ -1,0 +1,10 @@
+import numpy as np
+a = np.random.randint(9, size=(3, 4))
+b = np.random.randint(9, size=(3, 4))
+c = np.add(a, b)
+print("\nmatrix A")
+print (a)
+print("\nmatrix B")
+print(b)
+print("\nmatrix c")
+print(c)
