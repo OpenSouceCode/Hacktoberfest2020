@@ -1,0 +1,45 @@
+<html>
+<head>
+</head>
+    <style>
+        div{
+            margin-top: 20%;
+            margin-left: 45%;
+        }
+        p{
+            padding-left: 30px;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            background-color: #008CBA;
+            font-family: monospace;
+            font-size: 15px;
+            color: white;
+            border-radius: 12px;  
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        button:hover{
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+<body>
+    <div>
+        <p><strong>JavaScript Timers</strong></p>
+        <button onclick="delayedAlert();">Show an alert after every four seconds</button>
+        <p></p>
+        <button onclick="clearAlert();">Cancel alert before it happens</button>
+    </div>
+    <script type="text/javascript">
+        var timeoutID;
+        function delayedAlert() {
+            timeoutID = setInterval(alert, 4000, 'That was really slow!');
+        }
+        
+        function clearAlert() {
+            clearInterval(timeoutID);
+        }
+    </script>
+</body>
+</html>
