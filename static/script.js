@@ -10,7 +10,7 @@ Vue.component("card", {
       ref="card">
       <div class="card"
         :style="cardStyle">
-        <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>
+        <div class="card-bg" :style="url(${this.dataImage});[cardBgTransform]" data-bg="https://via.placeholder.com/150?text=Loading"></div>
         <div class="card-info">
           <slot name="header"></slot>
           <slot name="content"></slot>
@@ -52,11 +52,6 @@ Vue.component("card", {
         transform: `translateX(${tX}px) translateY(${tY}px)`,
       };
     },
-    cardBgImage() {
-      return {
-        backgroundImage: `url(${this.dataImage})`,
-      };
-    },
   },
 
   methods: {
@@ -83,3 +78,6 @@ const app = new Vue({
   el: "#app",
 });
 
+document.addEventListener('error', function(e){
+  if(e.target.nodeName == 'IMG'){e.target.style.backgroundImage = url('https://via.placeholder.com/150?text=Error+404');}
+}, true);
