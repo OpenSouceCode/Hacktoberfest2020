@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+	function get0()
+{
+    document.calculator.display.value+="0";
+}
+function get1()
+{
+    document.calculator.display.value+="1";
+}
+function get2()
+{
+    document.calculator.display.value+="2";
+}
+function get3()
+{
+    document.calculator.display.value+="3";
+}
+function get4()
+{
+    document.calculator.display.value+="4";
+}
+function get5()
+{
+    document.calculator.display.value+="5";
+}
+function get6()
+{
+    document.calculator.display.value+="6";
+}
+function get7()
+{
+    document.calculator.display.value+="7";
+}
+function get8()
+{
+    document.calculator.display.value+="8";
+}
+function get9()
+{
+    document.calculator.display.value+="9";
+}
+function sum()
+{
+    document.calculator.display.value+="+";
+}
+function subtract()
+{
+    document.calculator.display.value+="-";
+}
+function multiply()
+{
+    document.calculator.display.value+="*";
+}
+function divide()
+{
+    document.calculator.display.value+="/";
+}
+function cancel()
+{
+    document.calculator.display.value="0";
+}
+function equal()
+{
+    document.calculator.display.value=eval(document.calculator.display.value);
+}
+function decimal()
+{
+    document.calculator.display.value+=".";
+}
+// function show()
+// {
+//     var x=document.getElementById("more");
+//     if(x.style.display==="none")
+//    { x.style.display="block";}
+//     else
+//     {x.style.display="none";}
+// }
+
+       </script>
+        <style>
+        body{
+            background-color: bisque;
+        }
+        table,tr{
+            border:2px solid black;
+            border-collapse: collapse;   
+        }
+        #display{
+            height:80px;
+            width:330px;
+            background-color:white;
+            font-size:30px;
+            font-weight: 700;
+        }
+        .digit{
+            height:60px;
+            width:80px;
+            font-size: 25px;
+        }
+        .equal{
+            height:60px;
+            width:330px;
+            font-size:30px;
+            font-weight: bold;
+        }
+        .function{
+            height:60px;
+            width:80px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #a{
+            font-weight:bold;
+            font-size:50px;
+            font-style:italic;
+            font-family:cursive;
+        }
+        .moreoperations{
+            font-size:25px;
+            width:330px;
+        }
+        /* #more{
+            display:none;
+        } */
+        
+        </style>
+    </head>
+    <body align="center">
+        <p id="a">Calculator</p>
+        <div align="center">
+   <form name="calculator">
+       <table>
+           <tr>
+           <td colspan="4"><input type="button" name="display" id="display" value="0"></td> 
+          </tr>
+          <tr>
+              <td><input type="button" class="digit" value="1" onclick="get1()"></td>
+              <td><input type="button" class="digit" value="2" onclick="get2()"></td>
+              <td><input type="button" class="digit" value="3" onclick="get3()"></td>
+              <td><input type="button" class="function" value="+" onclick="sum()"></td>
+          </tr>
+          <tr>
+                <td><input type="button" class="digit" value="4" onclick="get4()"></td>
+                <td><input type="button" class="digit" value="5" onclick="get5()"></td>
+                <td><input type="button" class="digit" value="6" onclick="get6()"></td>
+                <td><input type="button" class="function" value="-" onclick="subtract()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="digit" value="7" onclick="get7()"></td>
+                <td><input type="button" class="digit" value="8" onclick="get8()"></td>
+                <td><input type="button" class="digit" value="9" onclick="get9()"></td>
+                <td><input type="button" class="function" value="*" onclick="multiply()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="function" value="C" onclick="cancel()"></td>
+                <td><input type="button" class="function" value="0" onclick="get0()"></td>
+                <td><input type="button" class="function" value="." onclick="decimal()"></td>
+                <td><input type="button" class="function" value="/" onclick="divide()"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="button" class="equal" value="=" onclick="equal()"></td>
+                </tr>
+                <!-- <tr>
+                    <td colspan=4><input type="button" class="moreoperations" value="More Operations>>" onclick="show()"></td>
+                </tr>
+                <tr id="more" style="display:none">
+                <td><input type="button" class="function" value="Sin" onclick="document.calculator.display.value=Math.sin(document.calculator.display.value)"></td>
+                <td><input type="button" class="function" value="Cos" onclick="document.calculator.display.value=Math.cos(document.calculator.display.value)"></td>
+                <td><input type="button" class="function" value="Tan" onclick="document.calculator.display.value=Math.tan(document.calculator.display.value)"></td>
+                <td><input type="button" class="function" value="Sqrt" onclick="document.calculator.display.value=Math.sqrt(document.calculator.display.value)"></td> 
+                </tr> -->
+
+       </table>
+   </form>
+   </div>
+    </body>
+</html>
