@@ -1,0 +1,6 @@
+---
+name: SHYAMASHRITA CHATTERJEE
+
+instituition: UNIVERSITY OF ENGINEERING AND MANAGEMENT, JAIPUR
+
+github:Shyamashrita
