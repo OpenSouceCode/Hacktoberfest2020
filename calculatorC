@@ -1,0 +1,47 @@
+/**This program is used as calculator for 2 numbers **/
+#include<stdio.h>
+
+int main()
+{
+    int no1=0.0,no2=0.0;
+    int result=0,choice=0;
+
+    printf("Enter the two numbers:\n\n");
+    scanf("%d %d",&no1,&no2);
+
+
+    do
+    {
+         printf("\nWhich operation you want to perform\n1.ADD\n2.SUBTRACT\n3.MULTIPLY\n4.DIVISION\n5.Modulus\nEnter your choice:\n");
+         scanf("%d",&choice);
+
+        switch(choice)
+            {
+                case 1:result=no1+no2;
+                       printf("Sum=%d",result);
+                       break;
+
+                case 2:result=no1-no2;
+                       printf("Difference=%d",result);
+                       break;
+
+                case 3:result=no1*no2;
+                       printf("Product=%d",result);
+                       break;
+
+                case 4:result=no1/no2;
+                       printf("Quotient(Division)=%d",result);
+                       break;
+
+                case 5:result=no1%no2;
+                       printf("Remainder=%d",result);
+                       break;
+
+                default: printf("invalid choice\n");
+
+          }
+
+    }while(choice<6);
+
+    return 0;
+}
