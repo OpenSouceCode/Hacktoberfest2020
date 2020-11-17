@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <math.h>
 
+//creates array and input
 int maximum(int A[], int n){
     int mx = A[0];
     for (int i = 1; i < n; i++)
