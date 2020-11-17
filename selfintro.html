@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>self intro</title>
+
+<style>
+    h1{
+        color:springgreen;
+    }
+    .box{
+        position: relative;
+        width:300px;
+        height:500px;
+        border:none;
+        margin:40px;
+        background-color:rgb(7,11,34);
+        border-radius: 10px;
+    }
+    body{
+        background:rgb(7,11,34);
+        display: flex;
+        justify-content: center;
+        margin:80px;
+    }
+    .glass{
+        position: absolute;
+        top:0px;
+        left:0px;
+        width:50%;
+        height:100%;
+        display:block;
+        background:rgba(255, 255, 255,.2);
+        pointer-events: none;
+    }
+    .content{
+        padding:20px;
+        color: salmon;
+    }
+    .box:before{
+        content: '';
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        background: white;
+        z-index: -1;
+        border: none;
+        border-radius: 5px;
+    }
+    .box:after{
+        content: '';
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        right: -2px;
+        bottom: -2px;
+        background: white;
+        z-index: -1;
+        filter:blur(40px);
+    }
+    .box:nth-child(1):before,.box:nth-child(1):after{
+        background: linear-gradient(235deg,#89ff00,#f806d0,#00bcd4);
+    }
+    .box:nth-child(2):before,.box:nth-child(2):after{
+        background: linear-gradient(235deg,red,rgb(236, 240, 3),rgb(3, 47, 241));
+    }
+
+</style>
+
+</head>
+<body align="center">
+    <div class="box">
+        <div class="glass"></div>
+            <div class="content">
+                <h1 align="center">SELF INTRO</h1>
+                <P>On a day where i heard a crying sound of  my mom and me trying to come out of  the world and tried  tried tried and finally came out and saw a simle on my mother face is the one sitting before you by the way this is prasanna borned and rasied in vzm and i am in my mid-twenties and completed my schooling in st.joseph's english medium high school  +2 iin sri chaitanaya clg and presently persuvating in lendi institue of enginnering and techonology and to be farnkly  speaking i don't have any hobbies at that what i want to do i will do and the fact about me is i may not be a fast learner but i am a good learner and once i get the point definetly i will remeber till the end of my day that's it about me</P>
+            </div>
+    </div>
+
+    
+</body>
+</html>
