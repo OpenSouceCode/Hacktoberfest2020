@@ -1,0 +1,3 @@
+name: Ritika Singh
+institution: KIET GROUP OF INSTITUTIONS
+github:RitikaSingh02
