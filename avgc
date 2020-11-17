@@ -1,0 +1,34 @@
+/** This program is used to find the average of the N numbers **/
+#include<stdio.h>
+
+int main()
+{
+    int size_=0;
+    int i=0;
+
+    printf("Enter how many numbers you want to enter to find the average:\n\n");
+    scanf("%d",&size_);
+
+    float arr[size_];
+    float sum=0.0,avg=0.0;
+
+    printf("Enter the numbers\n\n");
+
+    for(i=0;i<size_;i++)
+    {
+        printf("Enter the no %d : ",i+1);
+        scanf("%f",&arr[i]);
+    }
+
+    for(i=0;i<size_;i++)
+    {
+        sum=sum+arr[i];
+    }
+
+    avg=sum/size_;
+
+    printf("\n\nThe average of the numbers is %f\n\n",avg);
+
+    return 0;
+}
+
