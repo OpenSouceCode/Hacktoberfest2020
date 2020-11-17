@@ -1,0 +1,7 @@
+---
+name: Rishav Kumar
+institution: LOVELY PROFESSIONAL UNIVERSITY
+image: hr1shu.jpg
+quote: Everything happens for a reason.Live it, Love it and Learn from it.
+github: hr1shu
+---
