@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FIBONACCI SERIES OF FIRST N TERMS
+        </title>
+    </head>
+    <body>
+        n=<input type="text" id="t1"/>
+    </br>
+    <input type="button" id="b1" onclick="fs1();" value="click"/>
+    </br>
+        FIBONACCI SERIES OF FIRST N TERMS IS IN CONSOLE.
+        <p id="p1"></p>
+        <script>
+            function fs1()
+            {
+                var n = parseFloat(document.getElementById("t1").value);
+                var a = 1;
+                var b = 0;
+                var s = 0;
+                for (i=1; i<(n+1); i++) 
+                { 
+                    var s = a + b;
+                    var a = b;
+                    var b = s ;
+                    console.log(s);
+                    document.getElementById("p1").innerHTML += s + "<br>";                    
+
+                }
+            }
+        </script>
+
+    </body>
+</html>
