@@ -1,0 +1,7 @@
+---
+name: ABHAY AGARWAL
+institution: PANIPAT INSTITUTE OF ENGINEERING TECHNOLOGY
+image: abhayagarwal5.png
+quote: EVERYTHING IN LIFE IS AN OPPORTUNITY, JUST WAIT AND GRAB IT BY WAIST
+github: abhayagarwal5
+---
